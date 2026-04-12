@@ -545,6 +545,46 @@ app.post('/api/delete-casestudy', (req, res) => {
         res.status(500).json({ error: 'Errore interno del server.' });
     }
 });
+// ==========================================
+// ENDPOINT PREFERITI (STELLINA)
+// ==========================================
+
+app.post('/api/toggle-star', (req, res) => {
+    const { pageId, type, id, isStarred } = req.body;
+    
+    if (!pageId || !type || !id) {
+        return res.status(400).json({ error: 'Dati mancanti per aggiornare il preferito' });
+    }
+
+    try {
+        const dataStruct = readPageData(pageId);
+        let collection;
+
+        if (type === 'paper') {
+            collection = dataStruct.papers;
+        } else if (type === 'casestudy') {
+            collection = dataStruct.caseStudies;
+        } else {
+            return res.status(400).json({ error: 'Tipo non supportato per i preferiti' });
+        }
+
+        if (!collection) collection = [];
+
+        const item = collection.find(item => item.id === id);
+        if (!item) {
+            return res.status(404).json({ error: 'Elemento non trovato' });
+        }
+
+        item.starred = !!isStarred;
+
+        writePageData(pageId, dataStruct);
+
+        res.json({ success: true, message: 'Stato preferito aggiornato', starred: item.starred });
+    } catch (error) {
+        console.error('Errore durante il toggle della stellina:', error);
+        res.status(500).json({ error: 'Errore interno del server' });
+    }
+});
 
 
 app.listen(PORT, () => {

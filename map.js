@@ -707,6 +707,7 @@ function drawMap() {
     // Cerchio Visibile
     paperGroups.append("circle")
         .attr("class", "paper-node")
+        .classed("is-starred", d => !!d.starred)
         .attr("r", 12)
         .attr("fill", "white");
 
@@ -722,7 +723,7 @@ function drawMap() {
                 .style("transform", "scale(1)")
                 .classed("dark-theme", false) // Assicura che sia tema chiaro per i paper
                 .html(`
-                <div class="tooltip-title">${d.title || d.label}</div>
+                <div class="tooltip-title">${d.starred ? '<span style="color:#FFD700">★</span> ' : ''}${d.title || d.label}</div>
                 ${details.length ? `<div class="tooltip-meta">${details.join(" · ")}</div>` : ''}
                 ${d.area ? `<div class="tooltip-area"><span class="tooltip-dot" style="background:${areaColor}"></span>${d.area}</div>` : ''}
             `);
@@ -755,6 +756,7 @@ function drawMap() {
 
     caseStudyGroups.append("rect")
         .attr("class", "casestudy-node")
+        .classed("is-starred", d => !!d.starred)
         .attr("width", 24).attr("height", 24)
         .attr("x", -12).attr("y", -12)
         .attr("fill", "#111"); // Parte scura come da richiesta
@@ -771,7 +773,7 @@ function drawMap() {
                 .style("transform", "scale(1)")
                 .classed("dark-theme", true) // Tema scuro per i casi studio
                 .html(`
-                <div class="tooltip-title">◇ ${d.title || d.label}</div>
+                <div class="tooltip-title">${d.starred ? '<span style="color:#FFD700">★</span> ' : ''}◇ ${d.title || d.label}</div>
                 ${details.length ? `<div class="tooltip-meta">${details.join(" · ")}</div>` : ''}
                 ${d.area ? `<div class="tooltip-area"><span class="tooltip-dot" style="background:${areaColor}"></span>${d.area}</div>` : ''}
             `);
@@ -1098,6 +1100,55 @@ function drawMap() {
 
         // 5. Gestione MODIFICA (Mostrato solo se NON è statico)
         const editInfoBtn = d3.select("#edit-info-btn");
+        const starBtn = d3.select("#star-info-btn");
+
+        // GESTIONE STELLINA (PREFERITI)
+        if (d.type === 'paper' || d.type === 'casestudy') {
+            starBtn.style("display", "flex");
+            starBtn.text(d.starred ? "★" : "☆");
+            starBtn.classed("is-starred", !!d.starred);
+
+            starBtn.on("click", async (event) => {
+                event.stopPropagation();
+                if (isStatic) return; // In modalità read-only non facciamo modifiche al volo
+
+                d.starred = !d.starred;
+                
+                // Aggiorna UI Pulsante
+                starBtn.text(d.starred ? "★" : "☆");
+                starBtn.classed("is-starred", d.starred);
+
+                // Aggiorna Memoria Dati Locale
+                let collection = d.type === 'paper' ? data.papers : data.caseStudies;
+                let itemRef = collection.find(n => n.id === d.id);
+                if (itemRef) itemRef.starred = d.starred;
+
+                // Aggiorna D3.js DOM Visivo (istantaneo)
+                const targetNode = mainGroup.selectAll(d.type === 'paper' ? '.paper-node' : '.casestudy-node')
+                    .filter(node => String(node.id) === String(d.id));
+                
+                targetNode.classed("is-starred", d.starred);
+
+                // Chiama l'API nel background
+                try {
+                    await fetch('/api/toggle-star', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            pageId: currentPageId,
+                            type: d.type,
+                            id: d.id,
+                            isStarred: d.starred
+                        })
+                    });
+                } catch (e) {
+                    console.error("Errore salvataggio stella:", e);
+                }
+            });
+        } else {
+            starBtn.style("display", "none");
+        }
+
         if (isStatic) {
             editInfoBtn.style("display", "none");
         } else {
