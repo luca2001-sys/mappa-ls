@@ -2481,7 +2481,7 @@ window.addEventListener('keydown', (e) => {
 // Funzione per recuperare ed iniettare l'etichetta della data di aggiornamento
 async function fetchLastUpdate() {
     try {
-        const res = await fetch('./last_update.txt');
+        const res = await fetch('./last_update.txt?nocache=' + new Date().getTime());
         if (!res.ok) return;
         const text = await res.text();
         const rawText = text.trim();
