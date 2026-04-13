@@ -3,6 +3,7 @@ const width = window.innerWidth;
 const height = window.innerHeight;
 let currentScale = 1;
 let colorsEnabled = false; // Stato globale per la visione cromatica
+let showPersistentLabels = false; // Stato globale per le etichette persistenti
 let currentPageId = 'page_main'; // Id workspace iniziale
 let isStatic = false; // Flag per ambiente read-only (e.g. GitHub Pages)
 
@@ -742,6 +743,15 @@ function drawMap() {
             mainGroup.selectAll("line").classed("hovered-link", false);
         });
 
+    // Etichetta persistente sotto il cerchio paper
+    paperGroups.append("text")
+        .attr("class", "persistent-label")
+        .attr("dy", 28)
+        .text(d => {
+            const label = d.title || d.label || '';
+            return label.length > 25 ? label.substring(0, 23) + '…' : label;
+        });
+
     // --- CASE STUDY GROUPS (Diamond Nodes) ---
     caseStudyGroups = mainGroup.append("g")
         .selectAll("g.casestudy-group").data(nodes.filter(d => d.type === 'casestudy')).enter().append("g")
@@ -792,6 +802,15 @@ function drawMap() {
                 .style("transform", "scale(0.95)")
                 .classed("dark-theme", false); // Rimuovi reset classe scura
             mainGroup.selectAll("line").classed("hovered-link", false);
+        });
+
+    // Etichetta persistente sotto il diamante caso studio
+    caseStudyGroups.append("text")
+        .attr("class", "persistent-label casestudy-label")
+        .attr("dy", 28)
+        .text(d => {
+            const label = d.title || d.label || '';
+            return label.length > 25 ? label.substring(0, 23) + '…' : label;
         });
 
     keywordGroups = mainGroup.append("g")
@@ -869,6 +888,11 @@ function drawMap() {
                 .attr("x", -(baseWidth + 40) / 2)
                 .attr("y", -(baseHeight + 40) / 2);
         });
+
+        // Scala inversa delle etichette persistenti (paper e case study)
+        const labelScale = 1 / currentScale;
+        mainGroup.selectAll(".persistent-label")
+            .attr("transform", `scale(${labelScale})`);
     }
 
     function handleNodeClick(event, d) {
@@ -1414,6 +1438,20 @@ function inizializzaFiltri() {
             });
 
         colorSwitchLabel.append("span").attr("class", "slider");
+    }
+
+    // --- TOGGLE ETICHETTE PERSISTENTI ---
+    const toggleLabelsBtn = document.getElementById('toggle-labels-btn');
+    if (toggleLabelsBtn && !toggleLabelsBtn._bound) {
+        toggleLabelsBtn._bound = true;
+        toggleLabelsBtn.addEventListener('click', () => {
+            showPersistentLabels = !showPersistentLabels;
+            toggleLabelsBtn.classList.toggle('active', showPersistentLabels);
+            // Toggling la classe sul mainGroup SVG per far apparire/sparire le etichette via CSS
+            if (mainGroup) {
+                mainGroup.classed('labels-visible', showPersistentLabels);
+            }
+        });
     }
 
     // ========================================================

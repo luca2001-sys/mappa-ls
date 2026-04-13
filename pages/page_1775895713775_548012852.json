@@ -3,6 +3,10 @@
         {
             "name": "Simulation",
             "color": "#ff6600"
+        },
+        {
+            "name": "Ideation",
+            "color": "#aeff00"
         }
     ],
     "keywords": [
@@ -11,6 +15,12 @@
             "label": "Simulation",
             "area": "Simulation",
             "info": "La simulazione nei workflow creativi riguarda l'uso di agenti LLM per replicare ruoli tipici di uno studio di design — colleghi, figure senior, stakeholder — riducendo i tempi morti legati alla revisione e all'approvazione. La ricerca esistente copre principalmente il team interno, mentre la simulazione del cliente come agente autonomo resta un territorio quasi inesplorato. Il gap più rilevante è la simulazione integrata dell'intero ciclo progettuale, che comprende sia le dinamiche interne allo studio sia l'interazione con il cliente."
+        },
+        {
+            "id": "k_custom_1776072941638",
+            "label": "Generative Friction",
+            "area": "Ideation",
+            "info": "La **Generative Friction** è l'introduzione intenzionale di ostacoli nell'output AI — frammentazione del testo, ritardi nella consegna, ambiguità semantica — per trasformare il risultato da prodotto finito da consumare a materiale incompleto da lavorare, stimolando il designer a contribuire attivamente invece di accettare passivamente il suggerimento."
         }
     ],
     "papers": [
@@ -46,6 +56,18 @@
                 "/uploads/img_1775989617428-907899869.png"
             ],
             "starred": true
+        },
+        {
+            "id": "p_custom_1776073907369",
+            "title": "How Designers Appropriate Friction",
+            "author": "A. Baki Kocaballi, ...",
+            "year": "29 Marzo 2026",
+            "area": "Ideation",
+            "url": "https://arxiv.org/pdf/2603.27550",
+            "info": "**Drag or Traction: Understanding How Designers Appropriate Friction in AI Ideation Outputs**\n\n> **AI Summary: Abstract**\n> Il paper propone il concetto di **Generative Friction** — interruzioni intenzionali all'output AI (frammentazione, ritardo, ambiguità) — per trasformare l'output da prodotto finito a materiale semi-finito che invita il contributo umano. In uno studio qualitativo con sei designer, emerge che l'appropriazione della friction dipende fortemente dalla **Friction Disposition** dell'utente: chi ha alta tolleranza all'ambiguità la vive come risorsa creativa, chi ha bassa tolleranza la vive come ostacolo.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**I tre tipi di Generative Friction**\n- **Physical friction** — ogni seconda parola è nascosta: il designer scansiona il testo frammentato estraendo keywords come un tag cloud, senza poter copiare l'idea intera\n- **Temporal friction** — le parole appaiono una alla volta lentamente: il designer riempie il vuoto con idee proprie, invertendo la dinamica — prima pensa lui, poi consulta l'AI\n- **Semantic friction** — l'output è una metafora criptica: il designer deve decodificarla attivamente per estrarne feature concrete, trasformando l'ideazione in puzzle",
+            "images": [
+                "/uploads/img_1776073907387-613382513.png"
+            ]
         }
     ],
     "caseStudies": [
@@ -67,6 +89,20 @@
             "url": "https://arxiv.org/html/2509.21501v1",
             "info": "**LLM Agent Meets Agentic AI: Can LLM Agents Simulate Customers to Evaluate Agentic-AI-based Shopping Assistants?**\n\n> **AI Summary: Abstract**\n> Il paper affronta un problema pratico: i sistemi AI agentici evolvono così rapidamente che le valutazioni UX tradizionali (con utenti reali) non riescono a tenerli dietro. La domanda è: un agente LLM che simula un cliente reale — il suo **digital twin** — può sostituirlo in modo affidabile nei test? Lo studio recluta 40 persone reali per fare shopping con Amazon Rufus, poi ricrea ciascuna come agente LLM e ripete i task. Risultato: i digital twin replicano i pattern generali di comportamento ma divergono sulle scelte specifiche.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\nIl problema centrale non è \"gli agenti sono intelligenti?\" ma **\"quanto sono affidabili come proxy di utenti reali?\"** — una domanda cruciale per chiunque voglia scalare i test UX senza reclutare centinaia di persone per ogni iterazione del sistema.\n\n**Il Setup Sperimentale**\nLo studio è diviso in due fasi parallele. Nella fase 1, 40 partecipanti reali fanno shopping con Amazon Rufus su 4 task (monitor, sedia ergonomica, outfit matrimonio, giacca da trekking), con un plugin Chrome che logga ogni click, query e decisione. Nella fase 2, per ciascun partecipante viene costruito un digital twin LLM — un agente con la stessa persona demografica, abitudini d'acquisto e personalità — che ripete esattamente gli stessi task.\n\n**Dove gli Agenti Funzionano**\nSul macro-comportamento, la simulazione è sorprendentemente fedele. Gli agenti completano i task con un F1 score di 0.9 rispetto agli umani sul \"compro o non compro\", e il numero di turni di conversazione è allineato. Le prime query degli agenti mostrano similarità >0.4 con quelle umane.\n\n**Dove gli Agenti Falliscono**\nAppena si scende nel dettaglio, le traiettorie divergono. La similarità a livello di sequenza di azioni scende sotto 0.2, e solo circa il **2% degli agenti sceglie lo stesso prodotto** dell'utente umano corrispondente. Gli agenti esplorano uno spazio di scelta più ampio, mentre gli umani si concentrano su poche opzioni fin da subito.\n\n**Implicazioni e Frontiere Aperte**\nIl framework e il codice sono open source, pensati per estendersi a qualsiasi sistema agentisco che interagisce con utenti in conversazioni multi-turno — ben oltre lo shopping. La vera sfida futura è fare fine-tuning dei digital twin per replicare le strategie di esplorazione umane, rendendo i proxy sempre più fedeli e riducendo la dipendenza dai test con utenti reali.",
             "starred": false
+        },
+        {
+            "id": "c_custom_1776017494000",
+            "title": "MiroFish: AI prediction",
+            "author": "666ghj",
+            "year": "2026",
+            "area": "Simulation",
+            "url": "https://github.com/666ghj/MiroFish",
+            "info": "**MiroFish: AI prediction engine multi-agente**\n\n> **AI Summary**\n> MiroFish crea un mondo digitale parallelo partendo da dati reali (news, policy, segnali finanziari). Migliaia di agenti AI con personalità, memoria a lungo termine e logica comportamentale interagiscono liberamente ed evolvono socialmente. Permette di **simulare scenari futuri** in sandbox digitale, testando variabili dall'alto per prevedere traiettorie con precisione.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare il tool nel framework della mappa.*\n\nMiroFish trasforma dati reali in un **ecosistema digitale vivo** dove gli agenti simulano comportamenti umani complessi e interazioni sociali emergenti.\n\n**Architettura**\n- **Seed reale → Mondo parallelo**: dati esterni (notizie, policy, finanza) generano l'ambiente iniziale\n- **Agenti eterogenei**: migliaia di entità con personalità distinte, memoria persistente e logica decisionale autonoma\n- **Evoluzione sociale**: gli agenti interagiscono spontaneamente, formando dinamiche di gruppo organiche\n\n**Funzionalità core**\nL'utente opera da **\"vista divina\"**, iniettando variabili (cambi di policy, shock economici, eventi) nel sistema e osservando:\n- **Simulazioni multiple** parallele per testare scenari\n- **Traiettorie predittive** basate su interazioni agentiche reali\n- **Decisioni data-driven** validate da migliaia di iterazioni sandbox\n\n**Caso d'uso principale**\nPrevedere impatti di decisioni critiche: effetto di una nuova regolamentazione sui mercati, propagazione di trend sociali, risposta a crisi economiche — tutto **provato in simulazione** prima del mondo reale.\n\n**Vantaggio competitivo**\nNon è una semplice previsione statistica, ma una **replica digitale funzionante** della realtà sociale/economica, dove puoi sperimentare liberamente senza costi reali.",
+            "images": [
+                "/uploads/img_1776017494021-268404101.png",
+                "/uploads/img_1776017494030-144777995.png"
+            ],
+            "starred": true
         }
     ],
     "links": [
@@ -89,6 +125,14 @@
         {
             "caseStudy": "c_custom_1775990461065",
             "keyword": "k_custom_1775987169801"
+        },
+        {
+            "caseStudy": "c_custom_1776017494000",
+            "keyword": "k_custom_1775987169801"
+        },
+        {
+            "paper": "p_custom_1776073907369",
+            "keyword": "k_custom_1776072941638"
         }
     ]
 }
