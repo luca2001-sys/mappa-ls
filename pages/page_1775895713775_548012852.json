@@ -7,6 +7,10 @@
         {
             "name": "Ideation",
             "color": "#aeff00"
+        },
+        {
+            "name": "Tracking",
+            "color": "#00ff2a"
         }
     ],
     "keywords": [
@@ -21,6 +25,18 @@
             "label": "Generative Friction",
             "area": "Ideation",
             "info": "La **Generative Friction** è l'introduzione intenzionale di ostacoli nell'output AI — frammentazione del testo, ritardi nella consegna, ambiguità semantica — per trasformare il risultato da prodotto finito da consumare a materiale incompleto da lavorare, stimolando il designer a contribuire attivamente invece di accettare passivamente il suggerimento."
+        },
+        {
+            "id": "k_custom_1776171363446",
+            "label": "Abduction",
+            "area": "Ideation",
+            "info": "L'abduzione è un tipo di ragionamento logico in cui, partendo da un'osservazione e da una conoscenza di sfondo, si genera l'ipotesi più plausibile che spieghi o realizzi quella osservazione — non una certezza, ma una congettura intelligente (\"intelligent guessing\", Peirce) che estende la conoscenza esistente verso qualcosa di nuovo."
+        },
+        {
+            "id": "k_custom_1776184493978",
+            "label": "Biosensors",
+            "area": "Tracking",
+            "info": "Strumenti in grado di rilevare e registrare segnali biologici — cerebrali, oculomotori o fisiologici — in tempo reale durante un'attività cognitiva. Nel contesto della design research, vengono utilizzati per rendere osservabili processi mentali altrimenti inaccessibili, come la design fixation, il carico cognitivo e gli stati di pensiero divergente o convergente."
         }
     ],
     "papers": [
@@ -68,6 +84,35 @@
             "images": [
                 "/uploads/img_1776073907387-613382513.png"
             ]
+        },
+        {
+            "id": "p_custom_1776171469443",
+            "title": "Abductive reasoning",
+            "author": "Stephen C.-Y. Lu, Ang Liu",
+            "year": "12 Aprile 2012",
+            "area": "Ideation",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0007850612000649?fr=RR-2&rr=9ec1bcdd288d378c",
+            "info": "**Abductive Reasoning for Design Synthesis**\n\n> **AI Summary: Abstract**\n> Il paper formalizza l'abductive reasoning come struttura logica del design synthesis, distinguendo tre applicazioni pratiche e proponendo un processo a due fasi (alternative creation e alternative selection) per guidare i designer nei early design stages con informazione incompleta.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**Legenda sigle** — dall'Axiomatic Design (Suh, 2001):\n- **CN** = Customer Need — il bisogno dell'utente, punto di partenza\n- **FR** = Functional Requirement — cosa deve fare il sistema\n- **DP** = Design Parameter — come è fisicamente fatto il sistema\n\n***\n\n**Il contenuto**\nIl design synthesis non è un salto unico dal problema alla soluzione, ma due salti abduttivi in sequenza: CN → FR (dal bisogno alla funzione) e FR → DP (dalla funzione al concept fisico). I due salti richiedono tipi di abduction diversi: il primo richiede **factual abduction** (osservazioni aperte, ipotesi nuove), il secondo può usare **law abduction** (regole esistenti applicate a vincoli concreti).\n***\n\n**Il collasso da rilevare**\nIl problema nasce quando nel primo salto (CN → FR) il designer usa inconsapevolmente law abduction invece di factual abduction — parte da una regola già nota invece di costruire un FR nuovo dall'osservazione. Il processo apparentemente procede, arriva a un DP, ma ha saltato la parte creativa del primo salto senza accorgersene.  Il concept risultante è tecnicamente corretto ma non innovativo. È il tipo di collasso silenzioso — non un blocco, non un errore visibile — che un sistema di monitoraggio dello stato del processo creativo potrebbe intercettare prima che il designer converga su una soluzione mediocre.",
+            "starred": false
+        },
+        {
+            "id": "p_custom_1776185174024",
+            "title": "EEG to Explore Design Fixation",
+            "author": " Xin Guo, Wu Zhao, Juan Cao",
+            "year": "12 Marzo 2021",
+            "area": "Tracking",
+            "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7979313/pdf/CIN2021-6619598.pdf",
+            "info": "**Utilizing EEG to Explore Design Fixation during Creative Idea Generation**\n*(Cao, Zhao & Guo, 2021 — Computational Intelligence and Neuroscience)*\n\n> **AI Summary: Abstract**\n> Il paper utilizza l'EEG per misurare in tempo reale le differenze di attività neurale tra designer con alta e bassa design fixation durante la generazione di idee, identificando nella sincronizzazione/desincronizzazione della banda alfa la firma cerebrale del fenomeno e fornendo una base neuroscientifica per lo sviluppo di strumenti di de-fixation.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n\n**Design fixation e dual-process**\nLa fixation è inquadrata nel modello dual-process: il Sistema 1 genera soluzioni intuitive, il Sistema 2 dovrebbe inibirle prima di accettarle. Quando non lo fa, il designer segue il **percorso di minor resistenza** — riutilizza le feature dell'esempio senza esplorare alternative. La fixation non è mancanza di idee, è mancanza di **inibizione**.\n\n**Setup sperimentale**\n21 studenti di ingegneria completano un task di design con una soluzione di esempio fornita. La fixation viene misurata su tre metriche: fluenza, flessibilità e **grado di copia**. I partecipanti sono divisi in due gruppi in base al valore mediano del grado di copia. L'EEG registra l'attività cerebrale durante la sola fase di ideazione.\n\n**Risultati comportamentali**\nLa differenza tra gruppi emerge nella **flessibilità**, non nella fluenza. I designer ad alta fissazione producono idee in quantità simile, ma tutte nella stessa categoria. Il tempo impiegato non differisce — la fixation non rallenta il processo, ne riduce l'ampiezza esplorativa.\n\n**Risultati EEG**\nIl gruppo a bassa fissazione mostra **sincronizzazione alfa** in regioni frontali, parietotemporali e occipitali — associata a controllo inibitorio e attenzione interna. Il gruppo ad alta fissazione mostra desincronizzazione nelle stesse aree. La firma neurale della fixation è rilevabile **in tempo reale** durante l'ideazione.\n\n**Limiti**\nDichiarati: nessun gruppo di controllo senza esempio, EEG escluso durante il disegno, risultati non verificati fuori dal laboratorio, differenze di esperienza non controllate. Non dichiarato: campione piccolo (n=21) e omogeneo; la **divisione mediana** è arbitraria.\n\n**Conclusioni e sviluppi futuri**\nLa fixation ha una firma neurale misurabile, localizzata nella banda alfa frontale. Gli sviluppi futuri includono l'analisi EEG durante il disegno, l'introduzione di un gruppo di controllo, e la verifica in contesti reali. L'obiettivo finale è usare questi dati come base per **strumenti di de-fixation** — interventi che attivino dall'esterno il controllo inibitorio che il Sistema 2 non attiva da solo."
+        },
+        {
+            "id": "p_custom_1776186165133",
+            "title": "EEG Study of Design Thinking",
+            "author": "Hu, Ouyang, Wang, Zhang, Liu, Min & Du",
+            "year": "3 Marzo 2022",
+            "area": "Tracking",
+            "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.832194/full",
+            "info": "**Design Meets Neuroscience: An EEG Study of Design Thinking in Concept Generation Phase**\n*(Hu, Ouyang, Wang, Zhang, Liu, Min & Du, 2022 — Frontiers in Psychology)*\n\n> **AI Summary: Abstract**\n> Il paper combina protocol analysis ed EEG per mappare le firme neurali di sette attività di design thinking durante la fase di concept generation, identificando pattern distinti di sincronizzazione/desincronizzazione alfa per ciascuna attività e localizzando nell'area **parieto-occipitale** il centro principale dell'elaborazione cognitiva durante il design.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n---\n\n**Tassonomia delle attività di design**\n7 attività core: scenario establishment, scenario shift, problem defining, analogy and inference, synthesis, mutation, reflection. Ogni attività rappresenta un modo distinto di elaborare il problema — da divergente e aperto (scenario, mutation) a convergente e vincolato (reflection, analogy).\n\n**Setup sperimentale**\n12 studenti di design completano task progettati per indurre ciascuna attività. EEG registra durante l'ideazione (90s); il **retrospective voice coding** verifica quale attività stesse realmente avvenendo — rilevando frequenti disallineamenti tra task assegnato e pensiero effettivo.\n\n**Risultati per attività**\nAlfa in **sincronizzazione (ERS) durante lo scenario task** (divergente, rilassato); in **desincronizzazione (ERD) durante analogy, inference, problem defining e reflection** (sforzo cognitivo diretto). La mutation non regge come stato puro — scivola sistematicamente verso problem defining o reflection.\n\n**Ruolo dell'area parieto-occipitale**\nIn quasi tutte le attività è l'area con le differenze più significative. Collegata a elaborazione visiva, memoria visiva di lavoro e controllo cognitivo — coerente con la natura visivo-spaziale del design thinking.\n\n**Limiti**\nDichiarati: campione piccolo (n=12), soli studenti novici, condizioni artificiali. Non dichiarato: il retrospective coding introduce distorsione — i partecipanti razionalizzano ex post, e la durata delle attività è inferita dalla lunghezza dell'audio, non misurata direttamente.\n\n**Conclusioni e sviluppi futuri**\nOgni attività di design thinking ha una firma EEG distinguibile, localizzata in banda alfa e area parieto-occipitale. Sviluppi futuri: raffinare il protocollo, espandere il campione, testare se la stimolazione dell'area parieto-occipitale migliori specifiche attività di design. Obiettivo a lungo termine: un metodo di **valutazione oggettiva del design thinking** applicabile a ricerca e didattica.",
+            "starred": true
         }
     ],
     "caseStudies": [
@@ -103,6 +148,27 @@
                 "/uploads/img_1776017494030-144777995.png"
             ],
             "starred": true
+        },
+        {
+            "id": "c_custom_1776189457858",
+            "title": "Analisi dello stato emotivo",
+            "author": "Pietro Forino",
+            "year": "4 Maggio 2023",
+            "area": "Tracking",
+            "url": "https://www.politesi.polimi.it/handle/10589/206346",
+            "info": "**Titolo:** PAIR: oltre l'interazione\n**Autore:** Pietro Forino\n**Anno:** 2023\n**Istituzione:** Politecnico di Milano — LM Digital and Interaction Design\n**Relatore:** Alessandro Masserdotti\n\n---\n\n### Di cosa tratta\n\nLa tesi parte da una domanda: come cambia il rapporto uomo-macchina quando la macchina è dotata di intelligenza? L'obiettivo non è rispondere con un prodotto commerciale, ma con un artefatto speculativo — nel senso di Dunne & Raby — che apra un dialogo critico sul futuro dell'interazione. La ricerca teorica copre la storia dell'AI, l'evoluzione del ruolo dell'utente (da spettatore a protagonista), l'etica, il rapporto con le macchine, e l'Affective Computing. Il tutto converge in un progetto fisico chiamato PAIR.\n\n---\n\n### Il progetto PAIR\n\nPAIR è un wearable che rileva lo stato emotivo dell'utente in tempo reale per personalizzare l'esperienza di interazione. Il principio è: se la macchina sa come ti senti, può adattare il suo comportamento di conseguenza. L'hardware è un braccialetto con sensori fisiologici (battito cardiaco, risposta galvanica cutanea, temperatura, ossigenazione) collegato via BLE a un microcontrollore Adafruit Feather. Il segnale fisiologico viene combinato con il riconoscimento facciale via webcam, usato come etichetta emotiva per addestrare un modello di Machine Learning su EdgeImpulse. Il modello finale dovrebbe classificare lo stato emotivo dell'utente a partire dai soli sensori indossabili, senza dipendere dalla webcam a regime.",
+            "images": [
+                "/uploads/img_1776189457875-86420079.png"
+            ]
+        },
+        {
+            "id": "c_custom_1776189724572",
+            "title": "Analisi del carico cognitivo",
+            "author": "Claudia Cianflone",
+            "year": "Dicembre 2024",
+            "area": "Tracking",
+            "url": "https://webthesis.biblio.polito.it/33929/1/tesi.pdf",
+            "info": "**Titolo:** Analisi dello stress e del carico cognitivo mediante Brain-Computer Interface\n**Autore:** Claudia Cianflone\n**Anno:** 2024\n**Istituzione:** Politecnico di Torino — LM Ingegneria Informatica\n\n---\n\n### Di cosa tratta\n\nLa tesi usa EEG consumer-grade per misurare stress e cognitive load durante l'interazione con un braccio robotico collaborativo. Il confronto è tra due condizioni: robot che agisce senza preavviso vs. robot che segnala le proprie azioni in anticipo con feedback acustico. L'ipotesi è che la riduzione dell'incertezza abbassi il carico cognitivo rilevabile via EEG.\n\n---\n\n### Il sistema di rilevamento\n\nUsa due dispositivi Emotiv — MN8 (2 elettrodi auricolari) e Insight (5 elettrodi wireless) — entrambi indossabili e senza gel conduttivo. Dal segnale EEG grezzo vengono estratte le bande di potenza spettrale (Theta, Alpha, Beta Low, Beta High) e da queste si calcolano tre indici compositi: TLI (Task Load Index EEG), Engagement Index e Beta/Alpha Ratio. Questi indici numerici vengono monitorati in tempo reale durante la sessione. Come validazione soggettiva affianca il NASA-TLX, questionario multidimensionale consolidato che misura carico mentale, fisico, temporale, frustrazione, sforzo percepito e performance.\n\n---\n\n### Risultati\n\nNelle condizioni con incertezza alta (nessun preavviso), gli indici EEG mostrano valori di cognitive load più elevati rispetto alla condizione con segnalazione acustica. La correlazione con il NASA-TLX è parzialmente confermata, con alcune discrepanze legate alla piccola dimensione del campione (2 utenti)."
         }
     ],
     "links": [
@@ -133,6 +199,26 @@
         {
             "paper": "p_custom_1776073907369",
             "keyword": "k_custom_1776072941638"
+        },
+        {
+            "paper": "p_custom_1776171469443",
+            "keyword": "k_custom_1776171363446"
+        },
+        {
+            "paper": "p_custom_1776185174024",
+            "keyword": "k_custom_1776184493978"
+        },
+        {
+            "paper": "p_custom_1776186165133",
+            "keyword": "k_custom_1776184493978"
+        },
+        {
+            "caseStudy": "c_custom_1776189724572",
+            "keyword": "k_custom_1776184493978"
+        },
+        {
+            "caseStudy": "c_custom_1776189457858",
+            "keyword": "k_custom_1776184493978"
         }
     ]
 }
