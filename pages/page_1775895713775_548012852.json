@@ -37,6 +37,12 @@
             "label": "Biosensors",
             "area": "Tracking",
             "info": "Strumenti in grado di rilevare e registrare segnali biologici — cerebrali, oculomotori o fisiologici — in tempo reale durante un'attività cognitiva. Nel contesto della design research, vengono utilizzati per rendere osservabili processi mentali altrimenti inaccessibili, come la design fixation, il carico cognitivo e gli stati di pensiero divergente o convergente."
+        },
+        {
+            "id": "k_custom_1776437752899",
+            "label": "Swarm Intelligence",
+            "area": "Ideation",
+            "info": "Sistema di ottimizzazione artificiale ispirato agli sciami naturali, in cui una popolazione di agenti semplici — qui LLM — interagisce localmente per emergere intelligence collettiva, risolvendo problemi complessi senza controllo centrale. Nel contesto di multi-agent reasoning, bilancia qualità e diversità delle soluzioni tramite density estimation, evitando collassi su optima locali e generando reasoning paths multipli e robusti."
         }
     ],
     "papers": [
@@ -113,6 +119,38 @@
             "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2022.832194/full",
             "info": "**Design Meets Neuroscience: An EEG Study of Design Thinking in Concept Generation Phase**\n*(Hu, Ouyang, Wang, Zhang, Liu, Min & Du, 2022 — Frontiers in Psychology)*\n\n> **AI Summary: Abstract**\n> Il paper combina protocol analysis ed EEG per mappare le firme neurali di sette attività di design thinking durante la fase di concept generation, identificando pattern distinti di sincronizzazione/desincronizzazione alfa per ciascuna attività e localizzando nell'area **parieto-occipitale** il centro principale dell'elaborazione cognitiva durante il design.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n---\n\n**Tassonomia delle attività di design**\n7 attività core: scenario establishment, scenario shift, problem defining, analogy and inference, synthesis, mutation, reflection. Ogni attività rappresenta un modo distinto di elaborare il problema — da divergente e aperto (scenario, mutation) a convergente e vincolato (reflection, analogy).\n\n**Setup sperimentale**\n12 studenti di design completano task progettati per indurre ciascuna attività. EEG registra durante l'ideazione (90s); il **retrospective voice coding** verifica quale attività stesse realmente avvenendo — rilevando frequenti disallineamenti tra task assegnato e pensiero effettivo.\n\n**Risultati per attività**\nAlfa in **sincronizzazione (ERS) durante lo scenario task** (divergente, rilassato); in **desincronizzazione (ERD) durante analogy, inference, problem defining e reflection** (sforzo cognitivo diretto). La mutation non regge come stato puro — scivola sistematicamente verso problem defining o reflection.\n\n**Ruolo dell'area parieto-occipitale**\nIn quasi tutte le attività è l'area con le differenze più significative. Collegata a elaborazione visiva, memoria visiva di lavoro e controllo cognitivo — coerente con la natura visivo-spaziale del design thinking.\n\n**Limiti**\nDichiarati: campione piccolo (n=12), soli studenti novici, condizioni artificiali. Non dichiarato: il retrospective coding introduce distorsione — i partecipanti razionalizzano ex post, e la durata delle attività è inferita dalla lunghezza dell'audio, non misurata direttamente.\n\n**Conclusioni e sviluppi futuri**\nOgni attività di design thinking ha una firma EEG distinguibile, localizzata in banda alfa e area parieto-occipitale. Sviluppi futuri: raffinare il protocollo, espandere il campione, testare se la stimolazione dell'area parieto-occipitale migliori specifiche attività di design. Obiettivo a lungo termine: un metodo di **valutazione oggettiva del design thinking** applicabile a ricerca e didattica.",
             "starred": true
+        },
+        {
+            "id": "p_custom_1776247537781",
+            "title": "Concept-Knowledge Theory",
+            "author": "Armand Hatchuel, Benoît Weil",
+            "year": "1990",
+            "area": "Ideation",
+            "url": "https://en.wikipedia.org/wiki/C-K_theory",
+            "info": "**Autori:** Armand Hatchuel, Benoît Weil\n**Origine:** Mines ParisTech, anni '90\n\n---\n\n### Cos'è\n\nÈ una teoria del ragionamento progettuale che descrive il design come un processo di **doppia espansione**: si espandono simultaneamente lo spazio dei concetti (C) e lo spazio della conoscenza (K). Non è una metodologia operativa — è un modello formale di come funziona il pensiero quando si progetta qualcosa di genuinamente nuovo.\n\n---\n\n### I due spazi\n\n**K-space (Knowledge):** tutto ciò che è già noto, verificabile, logicamente consistente. Proposizioni con uno status logico definito — fatti, principi, esperienze, vincoli.\n\n**C-space (Concept):** proposizioni *senza* status logico nel K-space. Non sono né vere né false — sono oggetti parzialmente sconosciuti che il designer vuole far esistere. Il brief iniziale è un concetto: descrive qualcosa che non esiste ancora e di cui non si conosce la forma finale.\n\nLa distinzione chiave: senza il C-space, il design si riduce a ottimizzazione di soluzioni già note.\n\n---\n\n### I quattro operatori\n\nIl processo di design avviene attraverso quattro mosse tra i due spazi:\n\n- **K→C** — la conoscenza esistente partiziona e arricchisce un concetto, generando sotto-concetti più definiti\n- **C→C** — un concetto genera nuovi concetti per espansione o trasformazione\n- **C→K** — un concetto, una volta validato, diventa nuova conoscenza\n- **K→K** — la conoscenza si espande internamente per inferenza o ricerca\n\nIl design è il ciclo continuo di queste quattro mosse: ogni iterazione espande entrambi gli spazi.\n\n---\n\n### Perché è rilevante per la mia ricerca\n\nLa C-K theory formalizza esattamente il tipo di attività cognitiva che un sistema multi-agente dovrebbe supportare. La fixation, in questi termini, è il collasso del C-space su un sotto-albero troppo ristretto — il designer smette di espandere e ottimizza dentro un concetto già parzialmente noto. Un agente con un K-space diverso da quello del designer genera automaticamente operatori K→C diversi, producendo partizioni del concetto che il designer da solo non avrebbe esplorato. La diversità di knowledge base tra agenti non è un dettaglio tecnico — è il meccanismo strutturale che mantiene aperto il C-space.",
+            "images": [
+                "/uploads/img_1776247537800-747882307.png",
+                "/uploads/img_1776247537804-658871279.png"
+            ]
+        },
+        {
+            "id": "p_custom_1776438436649",
+            "title": "Swarm Intelligence Enhanced Reasoning",
+            "author": "Zhu, Zhou, Su, Zhuang & Bai",
+            "year": "21 Maggio 2025",
+            "area": "Ideation",
+            "url": "https://arxiv.org/html/2505.17115v1",
+            "info": "**Swarm Intelligence Enhanced Reasoning: A Density-Driven Framework for LLM-Based Multi-Agent Optimization**  \n*(Zhu, Zhou, Su, Zhuang & Bai, 2025 — arXiv)*  \n\n> **AI Summary: Abstract**  \n> Il paper propone un paradigma Agent-based Swarm Intelligence (ASI) per trattare il reasoning LLM come ottimizzazione nello spazio delle soluzioni, con il framework SIER che usa kernel density estimation e non-dominated sorting per bilanciare qualità e diversità delle traiettorie di ragionamento, evitando convergenze premature su local optima e superando CoT e reward-guided methods su benchmark matematici complessi.  \n> \n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**ASI contro Multi-Agent Systems**  \nASI trasforma il reasoning in una ricerca collettiva nello spazio delle soluzioni, con agenti-LLM che generano popolazioni di percorsi ragionati invece di dibattiti ridondanti tra agenti omogenei .  \nI multi-agent debates collassano per mancanza di vera diversità — tutti derivano dallo stesso LLM, accumulando bias contestuali — mentre ASI evolve popolazioni con feedback density-driven per esplorare regioni nuove .\n\n**Come funziona SIER**  \nInizia con una popolazione di agenti che producono percorsi iniziali, valutati passo-passo da un evaluator .  \nPoi evolve: mappa la densità delle soluzioni con KDE per spingere verso aree poco esplorate, seleziona i migliori step con sorting Pareto, e itera fino a convergenza o soglia qualità .  \nInfine clusterizza e sceglie i top da gruppi diversi per la risposta finale .\n\n**Limiti**  \nDichiarati: dipendenza da evaluator perfetti (PRM biased verso local optima); costo computazionale alto su problemi complessi (5x token MATH-500) .  \nNon dichiarato: iterazioni fisse (I_max=1) limita scalabilità; KDE token-level sensibile a bandwidth h; no test su non-matematici o task open-ended; assume PRM affidabile per step intermedi .\n\n**Conclusioni e sviluppi futuri**  \nSIER dimostra che swarm intelligence orchestra agenti-LLM in ecosistemi auto-organizzati, espandendo lo spazio delle soluzioni senza ruoli predefiniti .  \nFuturi: evaluator più robusti (multi-PRM), algoritmi di search efficienti, preservazione diversità vs bias; estensione a reasoning non-matematico e task reali per validare scalabilità .",
+            "starred": true
+        },
+        {
+            "id": "p_custom_1776439978788",
+            "title": "Designing Multi-Agent Systems with Zero Supervision",
+            "author": "Ke, Xu, Ming, Nguyen, Xiong & Joty",
+            "year": "9 Marzo 2026",
+            "area": "Ideation",
+            "url": "https://arxiv.org/pdf/2505.14996",
+            "info": "**MAS-ZERO: Designing Multi-Agent Systems with Zero Supervision**  \n*(Ke, Xu, Ming, Nguyen, Xiong & Joty, 2025 — arXiv)*  \n\n> **AI Summary: Abstract**  \n> Il paper introduce MAS-ZERO, framework per progettare MAS (Multi-Agent Systems) con zero supervisione: un meta-agente evolve iterativamente configurazioni MAS per ogni problema specifico, valutando solvability e completeness senza validation set, superando manual e automatic MAS su math, QA graduate e software engineering con +7.44% accuracy media e Pareto-optimalità costo-performance.  \n> \n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**MAS manuali vs automatici**  \n***_I MAS manuali soffrono di misallineamento umano-LLM e scarsa adattività a task nuovi_***; gli automatici pruning-based o generation-based dipendono da validation set per tuning e producono architetture fisse, fallendo su task complessi con multi-step planning.  \nMAS-ZERO risolve con meta-design inference-time: evolve MAS per-problem senza training, imparando capabilities agenti da execution traces.\n\n**Come funziona MAS-ZERO**  \n***_Un meta-agente orchestra meta-iterazioni: decompone il task in sub-task, genera sub-MAS_*** da building blocks (CoT, Debate, etc.) come codice, esegue per ottenere intermediate outputs, e genera meta-feedback su solvability (sub-task risolvibili.\nItera affinando decomposition e config (es. temp, rounds) basandosi su feedback da sub-task/agent samples, senza valutare final answer.  \nSelf-verification finale: raccoglie candidate answers da iterazioni, rank per frequency, filtra invalidi, seleziona best come multiple-choice.\n\n**Limiti**  \nDichiarati: dipendenza da self-evolved signals noisy; meta-agent fatica a progettare MAS efficaci out-of-box.  \nNon dichiarato: constraint building blocks limita creatività (no nuovi ruoli); 5 iterazioni fisse; verifica debole su task non-MC; no handling tool-use o env interaction.\n\n**Conclusioni e sviluppi futuri**  \nMAS-ZERO apre a MAS auto-evoluti inference-time, Pareto-dominanti su accuracy/cost con vari LLM.  \nFuturi: verifier esterni/oracle per boost; meta-agent training specifico; espansione building blocks; task open-ended, tool-integrated, real-world."
         }
     ],
     "caseStudies": [
@@ -147,7 +185,7 @@
                 "/uploads/img_1776017494021-268404101.png",
                 "/uploads/img_1776017494030-144777995.png"
             ],
-            "starred": true
+            "starred": false
         },
         {
             "id": "c_custom_1776189457858",
@@ -219,6 +257,30 @@
         {
             "caseStudy": "c_custom_1776189457858",
             "keyword": "k_custom_1776184493978"
+        },
+        {
+            "paper": "p_custom_1776247537781",
+            "keyword": "k_custom_1776072941638"
+        },
+        {
+            "paper": "p_custom_1776247537781",
+            "keyword": "k_custom_1776171363446"
+        },
+        {
+            "paper": "p_custom_1776438436649",
+            "keyword": "k_custom_1775987169801"
+        },
+        {
+            "paper": "p_custom_1776438436649",
+            "keyword": "k_custom_1776437752899"
+        },
+        {
+            "paper": "p_custom_1776439978788",
+            "keyword": "k_custom_1775987169801"
+        },
+        {
+            "paper": "p_custom_1776439978788",
+            "keyword": "k_custom_1776437752899"
         }
     ]
 }
