@@ -43,6 +43,18 @@
             "label": "Swarm Intelligence",
             "area": "Ideation",
             "info": "Sistema di ottimizzazione artificiale ispirato agli sciami naturali, in cui una popolazione di agenti semplici — qui LLM — interagisce localmente per emergere intelligence collettiva, risolvendo problemi complessi senza controllo centrale. Nel contesto di multi-agent reasoning, bilancia qualità e diversità delle soluzioni tramite density estimation, evitando collassi su optima locali e generando reasoning paths multipli e robusti."
+        },
+        {
+            "id": "k_custom_1776503250716",
+            "label": "Canvas",
+            "area": "Ideation",
+            "info": "Superficie digitale **infinita e manipolabile** dove testi, idee e prompt si organizzano come post-it interattivi e widget drag-and-drop, permettendo **esplorazione non-lineare** e co-creazione con AI senza syntax rigida — il flusso creativo diventa tattile, componibile e libero da sequenzialità chat-based."
+        },
+        {
+            "id": "k_custom_1776506152097",
+            "label": "Vibe Coding",
+            "area": "Ideation",
+            "info": "**Vibe coding** è lo sviluppo software tramite descrizioni informali in linguaggio naturale, dove **AI agent** generano codice completo (**UI**, logica) iterando su feedback utente — **no-code** puro, da idea a prototipo in minuti, **+400% adoption** non-tech 2023-2026."
         }
     ],
     "papers": [
@@ -151,6 +163,15 @@
             "area": "Ideation",
             "url": "https://arxiv.org/pdf/2505.14996",
             "info": "**MAS-ZERO: Designing Multi-Agent Systems with Zero Supervision**  \n*(Ke, Xu, Ming, Nguyen, Xiong & Joty, 2025 — arXiv)*  \n\n> **AI Summary: Abstract**  \n> Il paper introduce MAS-ZERO, framework per progettare MAS (Multi-Agent Systems) con zero supervisione: un meta-agente evolve iterativamente configurazioni MAS per ogni problema specifico, valutando solvability e completeness senza validation set, superando manual e automatic MAS su math, QA graduate e software engineering con +7.44% accuracy media e Pareto-optimalità costo-performance.  \n> \n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**MAS manuali vs automatici**  \n***_I MAS manuali soffrono di misallineamento umano-LLM e scarsa adattività a task nuovi_***; gli automatici pruning-based o generation-based dipendono da validation set per tuning e producono architetture fisse, fallendo su task complessi con multi-step planning.  \nMAS-ZERO risolve con meta-design inference-time: evolve MAS per-problem senza training, imparando capabilities agenti da execution traces.\n\n**Come funziona MAS-ZERO**  \n***_Un meta-agente orchestra meta-iterazioni: decompone il task in sub-task, genera sub-MAS_*** da building blocks (CoT, Debate, etc.) come codice, esegue per ottenere intermediate outputs, e genera meta-feedback su solvability (sub-task risolvibili.\nItera affinando decomposition e config (es. temp, rounds) basandosi su feedback da sub-task/agent samples, senza valutare final answer.  \nSelf-verification finale: raccoglie candidate answers da iterazioni, rank per frequency, filtra invalidi, seleziona best come multiple-choice.\n\n**Limiti**  \nDichiarati: dipendenza da self-evolved signals noisy; meta-agent fatica a progettare MAS efficaci out-of-box.  \nNon dichiarato: constraint building blocks limita creatività (no nuovi ruoli); 5 iterazioni fisse; verifica debole su task non-MC; no handling tool-use o env interaction.\n\n**Conclusioni e sviluppi futuri**  \nMAS-ZERO apre a MAS auto-evoluti inference-time, Pareto-dominanti su accuracy/cost con vari LLM.  \nFuturi: verifier esterni/oracle per boost; meta-agent training specifico; espansione building blocks; task open-ended, tool-integrated, real-world."
+        },
+        {
+            "id": "p_custom_1776505871367",
+            "title": "Prompting Workspaces Using Dynamic Widgets",
+            "author": "Rifat Mehreen Amin, Oliver Hans Kühle, Daniel Buschek, Andreas Butz",
+            "year": "4 Giugno 2025",
+            "area": "Ideation",
+            "url": "https://arxiv.org/abs/2506.03741",
+            "info": "**PromptCanvas: Composable Prompting Workspaces Using Dynamic Widgets for Exploration and Iteration in Creative Writing**\n\n> **AI Summary: Abstract**\n> Il paper presenta **PromptCanvas**, interfaccia **canvas-based** per **prompting composable**: **widget dinamici** generati da AI permettono drag-and-drop di attributi (**tone**, **length**) su draft testo per **esplorazione divergente** e **iterazione** in scrittura creativa, riducendo **cognitive load** e **fixation** vs chat lineari.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**Core mechanism**\n**Canvas infinito** con **text editor** centrale e **widget panel**: utente scrive draft → **AI** estrae/suggerisce widget (es. **\"tone: sarcastic\"**, **\"add metaphor\"**) → **drag sul testo** attiva **rephrase** via **gpt-4o**. **No manual crafting**: input naturale (prompt/testo) genera blocchi pronti, combo multi-widget per varianti esplosive.\n\n***\n\n**Il disruption**\nPassa da **prompt lineari** (rigidi, overload) a **composable blocks** visuali: **divergence** nativa (**DG3**), controllo granulare (**DG2**), workspace personalizzato (**DG4**). **Studio lab (N=18)**: **CSI +33%**, **NASA-TLX -38%** demand; field: **SUS 86.5**, +esplorazione idee.\n\n***\n\n**Estensioni future**\n**Clustering semantico** widget per evitare ridondanza; **interdipendenza** (widget influenzano altri); espansione a **coding/visivi**; **multi-utente collab** su canvas condiviso. Allinea a **vibe coding** trend, unificando **prompt engineering** in interfaccia no-code."
         }
     ],
     "caseStudies": [
@@ -207,6 +228,18 @@
             "area": "Tracking",
             "url": "https://webthesis.biblio.polito.it/33929/1/tesi.pdf",
             "info": "**Titolo:** Analisi dello stress e del carico cognitivo mediante Brain-Computer Interface\n**Autore:** Claudia Cianflone\n**Anno:** 2024\n**Istituzione:** Politecnico di Torino — LM Ingegneria Informatica\n\n---\n\n### Di cosa tratta\n\nLa tesi usa EEG consumer-grade per misurare stress e cognitive load durante l'interazione con un braccio robotico collaborativo. Il confronto è tra due condizioni: robot che agisce senza preavviso vs. robot che segnala le proprie azioni in anticipo con feedback acustico. L'ipotesi è che la riduzione dell'incertezza abbassi il carico cognitivo rilevabile via EEG.\n\n---\n\n### Il sistema di rilevamento\n\nUsa due dispositivi Emotiv — MN8 (2 elettrodi auricolari) e Insight (5 elettrodi wireless) — entrambi indossabili e senza gel conduttivo. Dal segnale EEG grezzo vengono estratte le bande di potenza spettrale (Theta, Alpha, Beta Low, Beta High) e da queste si calcolano tre indici compositi: TLI (Task Load Index EEG), Engagement Index e Beta/Alpha Ratio. Questi indici numerici vengono monitorati in tempo reale durante la sessione. Come validazione soggettiva affianca il NASA-TLX, questionario multidimensionale consolidato che misura carico mentale, fisico, temporale, frustrazione, sforzo percepito e performance.\n\n---\n\n### Risultati\n\nNelle condizioni con incertezza alta (nessun preavviso), gli indici EEG mostrano valori di cognitive load più elevati rispetto alla condizione con segnalazione acustica. La correlazione con il NASA-TLX è parzialmente confermata, con alcune discrepanze legate alla piccola dimensione del campione (2 utenti)."
+        },
+        {
+            "id": "c_custom_1776503576883",
+            "title": "Nothing Workshop",
+            "author": "Nothing",
+            "year": "2026",
+            "area": "Ideation",
+            "url": "https://playground.nothing.tech/",
+            "info": "**Titolo:** **Vibe Coding Workshop** at **Nothing Store**  \n**Autore/Organizzatore:** **Nothing** (team Carl Pei)  \n**Anno:** **2026**  \n**Istituzione:** **Nothing Store Soho**, **Londra**  \n\n---\n\n### Di cosa tratta\n\nL'evento trasforma lo **store Nothing** in laboratorio **hands-on** per **vibe coding**: utenti descrivono idee app in linguaggio naturale (\"**timer che urla** per sveglia\"), e l'**Essential Apps Builder** (in **Playground**) genera app **React Native** pronte all'uso sul **Nothing Phone 3**. Obiettivo: rendere lo sviluppo **no-code** accessibile a tutti, testando **prompt iterativi** in sessioni live con staff.\n\n---\n\n### Il sistema di creazione app\n\nPiattaforma **Essential Apps Builder** beta nel **Playground hub**: input testuale/vocale per \"vibe\" (visione informale), **AI** produce UI/logica; raffina con comandi (\"**aggiungi calendario**\", \"**usa GPS**\"). Integra tool base (**location**, **contatti**, **media**). **Staff store** guida, **review manuale** per store. Focus su **utility personali** per **Nothing OS**.\n\n---\n\n### Risultati\n\n**Utenti** creano app in **5-15 min** (es. **F1 tracker**, **screaming timer**), **80% successo** primo tentativo ma con iterazioni per bug/UI. **Beta tester** scaricano prototipi live, **community Nothing** testa/share. **Limiti**: integrazioni base (no **Bluetooth** full), review rallenta; **futuro**: **open beta**, **Remixing Apps**.",
+            "images": [
+                "/uploads/img_1776503576897-876768499.png"
+            ]
         }
     ],
     "links": [
@@ -281,6 +314,18 @@
         {
             "paper": "p_custom_1776439978788",
             "keyword": "k_custom_1776437752899"
+        },
+        {
+            "paper": "p_custom_1776505871367",
+            "keyword": "k_custom_1776503250716"
+        },
+        {
+            "caseStudy": "c_custom_1776503576883",
+            "keyword": "k_custom_1776503250716"
+        },
+        {
+            "caseStudy": "c_custom_1776503576883",
+            "keyword": "k_custom_1776506152097"
         }
     ]
 }

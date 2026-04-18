@@ -207,7 +207,7 @@
             "year": "30 Gennaio 2025",
             "area": "Interaction Systems",
             "url": "https://arxiv.org/abs/2501.18778",
-            "info": "> **AI Summary: Abstract**\n> Lo studio analizza come 19 designer UI/UX professionisti percepiscono l'IA come partner creativo nelle fasi di **pensiero divergente**. La ricerca identifica quattro ruoli cruciali: assistenza nella ricerca, superamento del blocco creativo (*kick-starting*), generazione di alternative di design e navigazione tra diversi livelli di fedeltà dei prototipi. I risultati evidenziano che i designer non cercano l'automazione totale, ma strumenti che offrano controllo, riflettano le loro abitudini visive e liberino tempo per l'innovazione pura.\n> \n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**Uso dell'IA nel Pensiero Divergente (Sintesi)**\nL'integrazione dell'IA nel workflow si manifesta in cinque aree operative:\n1. **Pre-Design**: Velocizzazione di analisi competitor, sintesi dati utente e creazione di Personas.\n2. **Ideazione**: Strumento anti-blocco per generare bozze iniziali e organizzare concept.\n3. **Design Specifico**: Esplorazione di layout, palette colori e stili visivi (es. Midjourney).\n4. **Prototipazione**: Generazione di interfacce cliccabili da testo e variazioni rapide di componenti.\n5. **Contenuti**: Sostituzione del *Lorem Ipsum* con copy realistico e immagini su misura.\n\n> **Focus: Barriere all'adozione (Perché il 42% non la usa)**\n> Nonostante le potenzialità, molti designer resistono all'IA per:\n> * **Qualità generica**: Risultati spesso troppo \"vagi\" per standard aziendali elevati.\n> * **Privacy**: Restrizioni legali sui dati sensibili del progetto.\n> * **Costi**: Barriere economiche per l'accesso a modelli avanzati.\n\n\n\n**Valori e Desideri per il Futuro (Sintesi)**\nI designer aspirano a un'IA che agisca come **memoria storica** del team, integrandosi nei database aziendali e nei design system esistenti (es. Figma) per gestire versioni e ricerche pregresse in modo analitico e non solo generativo.\n\n> **Focus: Efficienza e Liberazione Creativa**\n> L'obiettivo primario è delegare i \"task noiosi\" (rinominare livelli, adattare formati, correggere sviste) per spostare il focus dal *fare* al *pensare*. Si desidera un ponte fluido tra schizzi fisici e interfacce digitali che seguano automaticamente le linee guida del brand.\n\n> **Focus: Oltre l'interfaccia Chat**\n> L'attuale interazione basata su testo è percepita come un limite per i profili visivi:\n> * **Visualizzazione**: Preferenza per dati organizzati graficamente rispetto ai muri di testo.\n> * <u>**Difficoltà con i prompt: Scrivere il \"comando perfetto\" è faticoso e richiede tempo. I designer desiderano suggerimenti automatici, esempi o un'IA proattiva che faccia domande.**</u>\n> * **Curva di apprendimento**: Necessità di interazioni più naturali per ridurre la frustrazione dei tentativi a vuoto.",
+            "info": "> **AI Summary: Abstract**\n> Lo studio analizza come 19 designer UI/UX professionisti percepiscono l'IA come partner creativo nelle fasi di **pensiero divergente**. La ricerca identifica quattro ruoli cruciali: assistenza nella ricerca, superamento del blocco creativo (*kick-starting*), generazione di alternative di design e navigazione tra diversi livelli di fedeltà dei prototipi. I risultati evidenziano che i designer non cercano l'automazione totale, ma strumenti che offrano controllo, riflettano le loro abitudini visive e liberino tempo per l'innovazione pura.\n> \n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**Uso dell'IA nel Pensiero Divergente (Sintesi)**\nL'integrazione dell'IA nel workflow si manifesta in cinque aree operative:\n1. **Pre-Design**: Velocizzazione di analisi competitor, sintesi dati utente e creazione di Personas.\n2. **Ideazione**: Strumento anti-blocco per generare bozze iniziali e organizzare concept.\n3. **Design Specifico**: Esplorazione di layout, palette colori e stili visivi (es. Midjourney).\n4. **Prototipazione**: Generazione di interfacce cliccabili da testo e variazioni rapide di componenti.\n5. **Contenuti**: Sostituzione del *Lorem Ipsum* con copy realistico e immagini su misura.\n\n> **Focus: Barriere all'adozione (Perché il 42% non la usa)**\n> Nonostante le potenzialità, molti designer resistono all'IA per:\n> * **Qualità generica**: Risultati spesso troppo \"vaghi\" per standard aziendali elevati.\n> * **Privacy**: Restrizioni legali sui dati sensibili del progetto.\n> * **Costi**: Barriere economiche per l'accesso a modelli avanzati.\n\n\n\n**Valori e Desideri per il Futuro (Sintesi)**\nI designer aspirano a un'IA che agisca come **memoria storica** del team, integrandosi nei database aziendali e nei design system esistenti (es. Figma) per gestire versioni e ricerche pregresse in modo analitico e non solo generativo.\n\n> **Focus: Efficienza e Liberazione Creativa**\n> L'obiettivo primario è delegare i \"task noiosi\" (rinominare livelli, adattare formati, correggere sviste) per spostare il focus dal *fare* al *pensare*. Si desidera un ponte fluido tra schizzi fisici e interfacce digitali che seguano automaticamente le linee guida del brand.\n\n> **Focus: Oltre l'interfaccia Chat**\n> L'attuale interazione basata su testo è percepita come un limite per i profili visivi:\n> * **Visualizzazione**: Preferenza per dati organizzati graficamente rispetto ai muri di testo.\n> * <u>**Difficoltà con i prompt: Scrivere il \"comando perfetto\" è faticoso e richiede tempo. I designer desiderano suggerimenti automatici, esempi o un'IA proattiva che faccia domande.**</u>\n> * **Curva di apprendimento**: Necessità di interazioni più naturali per ridurre la frustrazione dei tentativi a vuoto.",
             "images": [
                 "/uploads/img_1774007419204-43916663.png"
             ]
@@ -409,14 +409,6 @@
             "keyword": "k_custom_1774002761726"
         },
         {
-            "paper": "p_custom_1774007419196",
-            "keyword": "k_custom_1774002417379"
-        },
-        {
-            "paper": "p_custom_1774007419196",
-            "keyword": "k_custom_1774002792402"
-        },
-        {
             "paper": "p_custom_1774007806484",
             "keyword": "k_custom_1774002417379"
         },
@@ -483,6 +475,14 @@
         {
             "caseStudy": "c_custom_1774951124421",
             "keyword": "k_custom_1774002761726"
+        },
+        {
+            "paper": "p_custom_1774007419196",
+            "keyword": "k_custom_1774002417379"
+        },
+        {
+            "paper": "p_custom_1774007419196",
+            "keyword": "k_custom_1774002792402"
         }
     ]
 }
