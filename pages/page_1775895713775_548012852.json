@@ -27,12 +27,6 @@
             "info": "La **Generative Friction** è l'introduzione intenzionale di ostacoli nell'output AI — frammentazione del testo, ritardi nella consegna, ambiguità semantica — per trasformare il risultato da prodotto finito da consumare a materiale incompleto da lavorare, stimolando il designer a contribuire attivamente invece di accettare passivamente il suggerimento."
         },
         {
-            "id": "k_custom_1776171363446",
-            "label": "Abduction",
-            "area": "Ideation",
-            "info": "L'abduzione è un tipo di ragionamento logico in cui, partendo da un'osservazione e da una conoscenza di sfondo, si genera l'ipotesi più plausibile che spieghi o realizzi quella osservazione — non una certezza, ma una congettura intelligente (\"intelligent guessing\", Peirce) che estende la conoscenza esistente verso qualcosa di nuovo."
-        },
-        {
             "id": "k_custom_1776184493978",
             "label": "Biosensors",
             "area": "Tracking",
@@ -55,6 +49,18 @@
             "label": "Vibe Coding",
             "area": "Ideation",
             "info": "**Vibe coding** è lo sviluppo software tramite descrizioni informali in linguaggio naturale, dove **AI agent** generano codice completo (**UI**, logica) iterando su feedback utente — **no-code** puro, da idea a prototipo in minuti, **+400% adoption** non-tech 2023-2026."
+        },
+        {
+            "id": "k_custom_1777805738314",
+            "label": "Cognitive Diversity",
+            "area": "Ideation",
+            "info": "La varietà nei **stili di pensiero, processi decisionali, modelli mentali e prospettive** tra i membri di un team o gruppo. Include differenze in come le persone interpretano informazioni, risolvono problemi, generano idee e valutano soluzioni. Distinta dalla diversità demografica (età, genere, etnia), la diversità cognitiva si focalizza sulle **differenze nel funzionamento intellettuale e nella rappresentazione della conoscenza**. È una risorsa per l'innovazione poiché porta molteplici angolazioni a problemi complessi, ma richiede gestione consapevole per evitare conflitto distruttivo e stallo decisionale."
+        },
+        {
+            "id": "k_custom_1777821856878",
+            "label": "Team Effectiveness",
+            "area": "Ideation",
+            "info": "La **Team Effectiveness** definisce la capacità di un gruppo di lavoro di raggiungere obiettivi comuni producendo risultati che superano la somma delle prestazioni individuali.\n\n---\n\nEssa non dipende solo dalle competenze tecniche, ma emerge dalla qualità della **collaborazione** e dalla gestione delle dinamiche interne, come la **sicurezza psicologica** e l'integrazione di diversi stili di pensiero. Un fattore determinante per l'efficacia è la **diversità cognitiva**, ovvero la varietà nel modo in cui i membri elaborano informazioni e affrontano situazioni incerte, permettendo al team di risolvere problemi complessi con maggiore velocità e versatilità. \n\nAl contrario, l'efficacia viene compromessa dal **bias funzionale** e dal conformismo, che portano alla creazione di team omogenei meno capaci di adattarsi al cambiamento. In questo contesto, l'efficacia si manifesta quando il team trasforma il potenziale della propria diversità in **performance operativa**, bilanciando l'esecuzione dei compiti con l'apprendimento continuo e la gestione costruttiva delle divergenze."
         }
     ],
     "papers": [
@@ -102,16 +108,6 @@
             "images": [
                 "/uploads/img_1776073907387-613382513.png"
             ]
-        },
-        {
-            "id": "p_custom_1776171469443",
-            "title": "Abductive reasoning",
-            "author": "Stephen C.-Y. Lu, Ang Liu",
-            "year": "12 Aprile 2012",
-            "area": "Ideation",
-            "url": "https://www.sciencedirect.com/science/article/pii/S0007850612000649?fr=RR-2&rr=9ec1bcdd288d378c",
-            "info": "**Abductive Reasoning for Design Synthesis**\n\n> **AI Summary: Abstract**\n> Il paper formalizza l'abductive reasoning come struttura logica del design synthesis, distinguendo tre applicazioni pratiche e proponendo un processo a due fasi (alternative creation e alternative selection) per guidare i designer nei early design stages con informazione incompleta.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**Legenda sigle** — dall'Axiomatic Design (Suh, 2001):\n- **CN** = Customer Need — il bisogno dell'utente, punto di partenza\n- **FR** = Functional Requirement — cosa deve fare il sistema\n- **DP** = Design Parameter — come è fisicamente fatto il sistema\n\n***\n\n**Il contenuto**\nIl design synthesis non è un salto unico dal problema alla soluzione, ma due salti abduttivi in sequenza: CN → FR (dal bisogno alla funzione) e FR → DP (dalla funzione al concept fisico). I due salti richiedono tipi di abduction diversi: il primo richiede **factual abduction** (osservazioni aperte, ipotesi nuove), il secondo può usare **law abduction** (regole esistenti applicate a vincoli concreti).\n***\n\n**Il collasso da rilevare**\nIl problema nasce quando nel primo salto (CN → FR) il designer usa inconsapevolmente law abduction invece di factual abduction — parte da una regola già nota invece di costruire un FR nuovo dall'osservazione. Il processo apparentemente procede, arriva a un DP, ma ha saltato la parte creativa del primo salto senza accorgersene.  Il concept risultante è tecnicamente corretto ma non innovativo. È il tipo di collasso silenzioso — non un blocco, non un errore visibile — che un sistema di monitoraggio dello stato del processo creativo potrebbe intercettare prima che il designer converga su una soluzione mediocre.",
-            "starred": false
         },
         {
             "id": "p_custom_1776185174024",
@@ -172,6 +168,50 @@
             "area": "Ideation",
             "url": "https://arxiv.org/abs/2506.03741",
             "info": "**PromptCanvas: Composable Prompting Workspaces Using Dynamic Widgets for Exploration and Iteration in Creative Writing**\n\n> **AI Summary: Abstract**\n> Il paper presenta **PromptCanvas**, interfaccia **canvas-based** per **prompting composable**: **widget dinamici** generati da AI permettono drag-and-drop di attributi (**tone**, **length**) su draft testo per **esplorazione divergente** e **iterazione** in scrittura creativa, riducendo **cognitive load** e **fixation** vs chat lineari.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**Core mechanism**\n**Canvas infinito** con **text editor** centrale e **widget panel**: utente scrive draft → **AI** estrae/suggerisce widget (es. **\"tone: sarcastic\"**, **\"add metaphor\"**) → **drag sul testo** attiva **rephrase** via **gpt-4o**. **No manual crafting**: input naturale (prompt/testo) genera blocchi pronti, combo multi-widget per varianti esplosive.\n\n***\n\n**Il disruption**\nPassa da **prompt lineari** (rigidi, overload) a **composable blocks** visuali: **divergence** nativa (**DG3**), controllo granulare (**DG2**), workspace personalizzato (**DG4**). **Studio lab (N=18)**: **CSI +33%**, **NASA-TLX -38%** demand; field: **SUS 86.5**, +esplorazione idee.\n\n***\n\n**Estensioni future**\n**Clustering semantico** widget per evitare ridondanza; **interdipendenza** (widget influenzano altri); espansione a **coding/visivi**; **multi-utente collab** su canvas condiviso. Allinea a **vibe coding** trend, unificando **prompt engineering** in interfaccia no-code."
+        },
+        {
+            "id": "p_custom_1777805084596",
+            "title": "The double-edged effect of cognitive diversity on team creativity",
+            "author": "Tian Wang,  Rebecca Kechen Dong,  Jianhua Zhu,  Jiuying Sun,  Ying Lu ",
+            "year": "06 Novembre 2025",
+            "area": "Ideation",
+            "url": "https://www.sciencedirect.com/science/article/pii/S014829632500640X?via%3Dihub",
+            "info": "**The Double-Edged Effect of Cognitive Diversity on Team Creativity: The Roles of Cognitive Conflict and Cognitive Trust**\n\n> **AI Summary:** Lo studio esamina la relazione **non lineare** tra diversità cognitiva e creatività di team attraverso il framework dell'information processing. Analizzando dati survey da 103 team, rivela che la diversità cognitiva ha un **effetto U-invertito** sulla creatività: benefica fino a un punto ottimale, oltre il quale diventa controproducente. Il **conflitto cognitivo moderato** media questa relazione, mentre il **cognitive trust** la modera riducendo l'impatto negativo della diversità sul conflitto.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**Il Paradosso della Diversità**\n\nContro l'assunzione lineare \"più diversità = più creatività\", il paper propone una **relazione U-invertita**: la diversità stimola creatività fino a un **punto ottimale**, oltre il quale diventa controproducente.\n\n**Information Processing Framework**\n\nI team sono processori di informazioni con due fasi critiche: **emersione** (surfacing) e **combinazione** (combination). Bassa diversità = omogeneità cognitiva, incapacità di superare path dependency. Diversità moderata = prospettive eterogenee + **conflitto costruttivo** = sintesi efficace. Diversità eccessiva = disparità estreme + sovraccarico informativo = **stallo irrisolvibile**.\n\n**Conflitto Cognitivo come Mediatore**\n\nLa relazione U-invertita è mediata dall'**intensità del conflitto cognitivo**. Conflitto moderato = elaborazione costruttiva + dibattito che genera innovazione. Conflitto eccessivo = contraddizioni inconciliabili + **paralisi decisionale** + soppressione della creatività.\n\n**Cognitive Trust come Moderatore**\n\nIl **cognitive trust** (fiducia condivisa nella competenza e affidabilità professionale) modera l'impatto della diversità sul conflitto. Con trust alto: disaccordi rimangono **task-level** e costruttivi. Con trust basso: disaccordi diventano **affettivi e relazionali**, il team entra in stallo prematuro. Il trust **espande la zona ottimale** della diversità.\n\n**Metodo e Risultati**\n\nSurvey su **103 team** misura diversità cognitiva, conflitto cognitivo, cognitive trust, creatività percepita. Risultati confermano: (1) **relazione U-invertita** diversità-creatività; (2) **conflitto cognitivo media** questa relazione; (3) **cognitive trust modera** entrambi gli effetti. Team con alto trust mantengono prestazioni creative superiori anche con diversità cognitiva più elevata.\n\n**Implicazioni Pratiche**\n\n**Ottimizzare** (non massimizzare) diversità cognitiva. Gestire consapevolmente il conflitto: mantenerlo **cognitivo**, non affettivo. Investire nel cognitive trust tramite: chiarezza di ruoli e competenze, modellamento dell'**integrità cognitiva**, riconoscimento dell'affidabilità professionale.\n\n**Limiti**\n\nCampione piccolo (103 team). **Self-report** introduce bias. Non esamina variazioni per tipologie di team (virtuali, multiculturali, gerarchie diverse). Dati trasversali non stabiliscono **causalità definitiva**. Manca orientamento operativo su come costruire/riparare il cognitive trust in team frammentati.",
+            "images": [
+                "/uploads/img_1777805084620-695685495.jpg"
+            ]
+        },
+        {
+            "id": "p_custom_1774519388263",
+            "title": "Exploring Design of Multi-Agent LLM Dialogues for Research Ideation",
+            "author": "Keisuke Ueda, Wataru Hirota, Takuto Asakura, Takahiro Omi, Kosuke Takahashi, Kosuke Arima, Tatsuya Ishigaki",
+            "year": "2025",
+            "area": "Ideation",
+            "url": "https://arxiv.org/html/2507.08350v1",
+            "info": "> **AI Summary: Abstract**\n> Il paper esplora come progettare dialoghi multi-agente tra LLM per ottimizzare la generazione di idee di ricerca scientifica. Gli autori testano sistematicamente sette configurazioni di pipeline — variando numero di agenti, profondità dei cicli critica-revisione e diversità delle persona assegnate — su sette topic di AI e NLP, producendo circa 7000 idee totali. I risultati mostrano che aumentare la profondità delle interazioni e l'eterogeneità dei critici massimizza sia la diversità che la fattibilità delle proposte, senza sacrificare la qualità media.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**I topic delle idee generate**\nIl paper adotta i sette topic standard del benchmark NLP di Si et al. (2025), estratti dalle Call for Papers di conferenze recenti: **bias**, **coding**, **safety**, **multilinguality**, **factuality**, **math** e **uncertainty**. Su ciascun topic, gli agenti producono proposal sperimentali complete — titolo, motivazione, metodo proposto, baseline e metriche — con un livello di dettaglio paragonabile a quello di un abstract esteso. Le idee spaziano da studi valutativi (nuovi benchmark per bias intersezionale o lingue low-resource) a proposte metodologiche (strategie di fine-tuning, architetture neuro-symbolic) fino a sistemi progettuali end-to-end (pipeline di red-teaming automatizzato, RAG con verifica claim in-loop).\n\n**Le 7 configurazioni sperimentali**\nLa ricerca confronta sette architetture di dialogo multi-agente costruite attorno a un ciclo **ideazione → critica → revisione**. La baseline (config. 1) prevede un singolo ideatore e un singolo critico generalista con un solo ciclo. Le configurazioni successive aumentano il **parallelismo** (più ideatori o più critici in simultanea), la **profondità** (fino a K=3 cicli di revisione) e la **diversità** delle persona, assegnando agli agenti expertise di dominio specifico — AI-Physics, AI-Chem, Critico-NLP, Critico-CV, Critico-ML — fino alla config. 7, dove tutti gli agenti sono dominio-specifici ed eterogenei.\n\n**Risultati chiave e trade-off**\n\n> **Parallelismo agenti**\n> Aggiungere più ideatori o critici in parallelo aumenta la diversità delle idee, ma fa calare la qualità media. È un trade-off netto: si guadagna ampiezza, si perde profondità.\n\n> **Profondità (K cicli)**\n> Aumentare i cicli critica-revisione è l'unica leva senza controindicazioni: la diversità cresce e la qualità rimane stabile. È il guadagno netto della ricerca.\n\n> **Diversità persona**\n> Assegnare agli agenti expertise di dominio specifico ed eterogeneo, soprattutto sul lato dei critici, migliora sia la fattibilità che l'originalità delle idee finali. Contano di più i critici eterogenei che gli ideatori eterogenei.\n\n> **Raccomandazione operativa**\n> La configurazione ottimale usa K≥3 cicli di critica-revisione con critici dominio-specifici eterogenei. Sconsigliato puntare solo sull'aumento di agenti ideatori paralleli: costo computazionale alto, rendimenti decrescenti sulla qualità.\n",
+            "images": [
+                "/uploads/img_1774519388282-190135051.png",
+                "/uploads/img_1774519388285-892778705.png"
+            ]
+        },
+        {
+            "id": "p_custom_1777817620344",
+            "title": "Perspective taking to unlocking diversity's potential",
+            "author": "Hoever, Inga J. van Knippenberg, Daan van Ginkel, Wendy P. Barkema, Harry G.",
+            "year": "2012",
+            "area": "Ideation",
+            "url": "https://psycnet.apa.org/record/2012-17920-001",
+            "info": "**Fostering Team Creativity: Perspective Taking as Key to Unlocking Diversity's Potential**\n\n> **AI Summary:** Il paper affronta il paradosso empirico della diversità: nonostante teoricamente favorevole alla creatività, i risultati sono inconsistenti. La soluzione è il **perspective taking** (assumere i punti di vista altrui), che modera l'effetto della diversità sulla creatività di team. Team diversi sono creativi SOLO se i membri si impegnano in perspective taking; senza di esso, la diversità non produce benefici. Il meccanismo chiave è l'**information elaboration** (elaborazione profonda dell'informazione).\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**Il Paradosso della Diversità**\n\nSebbene diversità di prospettive sia frequentemente argomentata come stimolo per creatività, i risultati empirici rimangono inconsistenti. Il paper sviluppa un modello teorico in cui l'effetto della diversità sulla creatività del team è moderato dal grado in cui i membri si impegnano in perspective taking. La diversità da sola non basta — serve una **condizione moderatrice critica**.\n\n**Il Moderatore Critico: Perspective Taking**\n\nI risultati mostrano che il perspective taking modera l'impatto della diversità sulla creatività di gruppo, e questo effetto è parzialmente mediato dal reframing, identificato come un processo vitale che stimola creatività all'interno dei work group. Perspective taking è l'**atto cognitivo di adottare il punto di vista dell'altro**, non semplice ascolto. Serve a comprendere le assunzioni sottostanti del pensiero altrui e reinterpretare il problema da quella prospettiva.\n\n**Risultato Empirico Centrale**\n\nTeam diversi hanno performato più creativamente rispetto a team omogenei quando si impegnarono in perspective taking, ma non quando non ricevettero istruzioni a tale riguardo. L'elaborazione dell'informazione a livello di team ha mediato questo effetto moderato, mostrando un effetto indiretto più forte rispetto al solo information sharing o task conflict. Il finding è **binario**: diversità + perspective taking = creatività elevata; diversità senza perspective taking = nessun beneficio."
+        },
+        {
+            "id": "p_custom_1777822177101",
+            "title": "Conflict in Teams",
+            "author": "Carsten K. W. De Dreu, Laurie R. Weingart",
+            "year": "2003",
+            "area": "Ideation",
+            "url": "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Negotiation_and_Conflict_Management/De_Dreu_Weingart_Task-conflict_Meta-analysis.pdf",
+            "info": "**Meta-analysis of Conflict in Teams: The Rule of Task vs. Relationship Conflict**\n\n> **AI Summary:** La ricerca di De Dreu e Weingart smentisce il mito del conflitto sempre positivo. Dimostra che sia le tensioni relazionali sia quelle sui contenuti tendono a ridurre la performance. Il beneficio emerge solo sotto specifiche condizioni di moderazione, dove il dissenso non viene percepito come una minaccia personale.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca organizzativa nel framework della mappa.*\n\n---\n\n**Smentita del Conflitto Benefico**\nContrariamente alle credenze passate, lo studio evidenzia come il **conflitto sul compito** possa essere dannoso quanto quello relazionale, poiché spesso i due si sovrappongono. Quando le critiche alle idee vengono percepite come attacchi personali, la soddisfazione e l'efficacia del team crollano drasticamente.\n\n**Complessità e Clima di Team**\nL'impatto del conflitto dipende dal contesto: nei **compiti complessi**, il dissenso può sovraccaricare le risorse cognitive dei membri, peggiorando il risultato. Fondamentale è il ruolo della **sicurezza psicologica**: solo in un clima di fiducia reciproca la divergenza tecnica non viene interpretata come una minaccia alla stabilità del gruppo.\n\n**Focus: La Relazione a U Rovesciata**\nIl cuore della ricerca è il superamento della visione lineare del conflitto. Il rapporto tra task conflict e performance segue una **curva a U rovesciata**:\n* **Livelli Bassi:** Mancanza di stimoli e pensiero critico.\n* **Livelli Moderati:** Il punto di equilibrio ottimale dove il dissenso stimola l'innovazione, a patto che esistano stabilità emotiva e ottimi processi di gestione.\n* **Livelli Elevati:** Il punto di rottura in cui l'energia mentale viene sottratta al lavoro per essere sprecata nella gestione delle tensioni.\n\n---\n\n### **Integrazione e Prospettive: Il Fattore Timing (Farh et al., 2010)**\nUn'integrazione cruciale a questa meta-analisi è offerta dal paper di **Farh et al. (2010)**, che introduce la variabile del **ciclo di vita del progetto**. Mentre De Dreu e Weingart mettono in guardia dai rischi del conflitto, Farh dimostra che l'efficacia della curva a U è massima nelle **fasi iniziali**, dove il dissenso è vitale per il *reframing* dei problemi, mentre diventa irrilevante o dannoso nelle fasi finali di implementazione.\n\nIn questo scenario, il **manager** assume un ruolo attivo di facilitatore: deve promuovere intenzionalmente un **clima psicologicamente sicuro** per stimolare controversie costruttive all'inizio, per poi guidare il team verso la convergenza e l'esecuzione rapida man mano che il progetto evolve.",
+            "starred": true
         }
     ],
     "caseStudies": [
@@ -240,6 +280,18 @@
             "images": [
                 "/uploads/img_1776503576897-876768499.png"
             ]
+        },
+        {
+            "id": "c_custom_1777818741778",
+            "title": "Teams Solve Problems Faster When They’re More Cognitively Diverse",
+            "author": "Alison Reynolds, David Lewis",
+            "year": "2017",
+            "area": "Ideation",
+            "url": "https://s88309836e4959a9a.jimcontent.com/download/version/1637926187/module/14027706430/name/HBR%20-%20Teams%20Solve%20Problems%20Faster%20When%20They%E2%80%99re%20More%20Cognitively%20Diverse.pdf",
+            "info": "> **AI Summary:** L'articolo dimostra che la **diversità cognitiva** (come elaboriamo le informazioni e affrontiamo il cambiamento) è il vero motore della performance. A differenza della diversità demografica, che non mostra correlazioni dirette con il successo nei test, un'alta varietà di stili di pensiero permette ai team di risolvere problemi complessi molto più velocemente.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca dei framework.*\n\n\n**Oltre la Diversità Visibile**\nLa diversità demografica (genere, etnia, età) da sola non garantisce creatività o velocità. Il successo dipende dalla **diversità cognitiva**, un tratto interno legato a come individui diversi interagiscono con situazioni incerte.\n\n**Il Motore: L'AEM Cube**\nLa performance è stata misurata tramite lo strumento **AEM Cube**, che analizza:\n* **Knowledge Processing**: preferenza tra usare conoscenze note o generarne di nuove.\n* **Perspective**: propensione a usare la propria esperienza o orchestrare quella altrui.\n\n**Barriere Culturali**\nLe aziende tendono a reclutare \"a propria immagine\", creando **bias funzionali** e team omogenei che soffocano il dissenso. Per innovare, i leader devono garantire **sicurezza psicologica**, permettendo a ogni membro di esprimere il proprio stile di pensiero unico.\n\n---\n\n### **Analisi dei Dati: Correlazione tra Diversità e Velocità**\nL'immagine illustra i risultati empirici su sei team (A-F) impegnati in una sfida strategica. Si nota una **correlazione netta**: i team **A, B e C**, con alta diversità cognitiva (deviazioni standard elevate, generalmente sopra 23), hanno completato il compito in circa **21-22 minuti**. Al contrario, i team **D, E e F**, con **bassa diversità cognitiva** (deviazioni standard spesso sotto 20), hanno mostrato performance scadenti: il team D è stato sensibilmente più lento (34.5 minuti), mentre i team E e F hanno **fallito completamente** la sfida.\n\n**Metodologia della Ricerca**\nI risultati si basano su un **esercizio di esecuzione strategica** ripetuto oltre 100 volte in 12 anni. La prova consiste in una simulazione a tempo dove i team devono gestire **situazioni nuove, incerte e complesse**, richiedendo un'elevata capacità di adattamento e apprendimento rapido per raggiungere l'obiettivo prefissato.",
+            "images": [
+                "/uploads/img_1777818741804-851773394.png"
+            ]
         }
     ],
     "links": [
@@ -272,10 +324,6 @@
             "keyword": "k_custom_1776072941638"
         },
         {
-            "paper": "p_custom_1776171469443",
-            "keyword": "k_custom_1776171363446"
-        },
-        {
             "paper": "p_custom_1776185174024",
             "keyword": "k_custom_1776184493978"
         },
@@ -294,10 +342,6 @@
         {
             "paper": "p_custom_1776247537781",
             "keyword": "k_custom_1776072941638"
-        },
-        {
-            "paper": "p_custom_1776247537781",
-            "keyword": "k_custom_1776171363446"
         },
         {
             "paper": "p_custom_1776438436649",
@@ -326,6 +370,30 @@
         {
             "caseStudy": "c_custom_1776503576883",
             "keyword": "k_custom_1776506152097"
+        },
+        {
+            "paper": "p_custom_1777805084596",
+            "keyword": "k_custom_1777805738314"
+        },
+        {
+            "paper": "p_custom_1774519388263",
+            "keyword": "k_custom_1777805738314"
+        },
+        {
+            "paper": "p_custom_1777817620344",
+            "keyword": "k_custom_1777805738314"
+        },
+        {
+            "caseStudy": "c_custom_1777818741778",
+            "keyword": "k_custom_1777805738314"
+        },
+        {
+            "paper": "p_custom_1777822177101",
+            "keyword": "k_custom_1777805738314"
+        },
+        {
+            "paper": "p_custom_1777822177101",
+            "keyword": "k_custom_1777821856878"
         }
     ]
 }
