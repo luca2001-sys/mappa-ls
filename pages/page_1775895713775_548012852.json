@@ -61,6 +61,18 @@
             "label": "Team Effectiveness",
             "area": "Ideation",
             "info": "La **Team Effectiveness** definisce la capacità di un gruppo di lavoro di raggiungere obiettivi comuni producendo risultati che superano la somma delle prestazioni individuali.\n\n---\n\nEssa non dipende solo dalle competenze tecniche, ma emerge dalla qualità della **collaborazione** e dalla gestione delle dinamiche interne, come la **sicurezza psicologica** e l'integrazione di diversi stili di pensiero. Un fattore determinante per l'efficacia è la **diversità cognitiva**, ovvero la varietà nel modo in cui i membri elaborano informazioni e affrontano situazioni incerte, permettendo al team di risolvere problemi complessi con maggiore velocità e versatilità. \n\nAl contrario, l'efficacia viene compromessa dal **bias funzionale** e dal conformismo, che portano alla creazione di team omogenei meno capaci di adattarsi al cambiamento. In questo contesto, l'efficacia si manifesta quando il team trasforma il potenziale della propria diversità in **performance operativa**, bilanciando l'esecuzione dei compiti con l'apprendimento continuo e la gestione costruttiva delle divergenze."
+        },
+        {
+            "id": "k_custom_1777913137576",
+            "label": "Perspecitve Taking",
+            "area": "Ideation",
+            "info": "Il **perspective taking** è l'atto cognitivo intenzionale di adottare il punto di vista di un'altra persona per comprenderne i pensieri, le motivazioni e le assunzioni sottostanti. All'interno di un team, questo processo non si limita al semplice ascolto, ma agisce come una **condizione moderatrice critica** che permette di sbloccare il potenziale della diversità."
+        },
+        {
+            "id": "k_custom_1778055601182",
+            "label": "Epistemic Diversity",
+            "area": "Ideation",
+            "info": "La **epistemic diversity** (diversità epistemica) indica la coesistenza, all'interno di un gruppo o di un sistema, di **molteplici modi di conoscere, interpretare e validare la realtà**. Essa si manifesta attraverso la varietà di modelli mentali, categorie concettuali, assunzioni teoriche e metodologie che i singoli membri utilizzano per elaborare le informazioni e risolvere problemi. Più che sulla diversità demografica o di ruolo, la diversità epistemica si focalizza sulla pluralità delle **prospettive cognitive** e dei criteri di verità disponibili nel team."
         }
     ],
     "papers": [
@@ -210,8 +222,44 @@
             "year": "2003",
             "area": "Ideation",
             "url": "https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Negotiation_and_Conflict_Management/De_Dreu_Weingart_Task-conflict_Meta-analysis.pdf",
-            "info": "**Meta-analysis of Conflict in Teams: The Rule of Task vs. Relationship Conflict**\n\n> **AI Summary:** La ricerca di De Dreu e Weingart smentisce il mito del conflitto sempre positivo. Dimostra che sia le tensioni relazionali sia quelle sui contenuti tendono a ridurre la performance. Il beneficio emerge solo sotto specifiche condizioni di moderazione, dove il dissenso non viene percepito come una minaccia personale.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca organizzativa nel framework della mappa.*\n\n---\n\n**Smentita del Conflitto Benefico**\nContrariamente alle credenze passate, lo studio evidenzia come il **conflitto sul compito** possa essere dannoso quanto quello relazionale, poiché spesso i due si sovrappongono. Quando le critiche alle idee vengono percepite come attacchi personali, la soddisfazione e l'efficacia del team crollano drasticamente.\n\n**Complessità e Clima di Team**\nL'impatto del conflitto dipende dal contesto: nei **compiti complessi**, il dissenso può sovraccaricare le risorse cognitive dei membri, peggiorando il risultato. Fondamentale è il ruolo della **sicurezza psicologica**: solo in un clima di fiducia reciproca la divergenza tecnica non viene interpretata come una minaccia alla stabilità del gruppo.\n\n**Focus: La Relazione a U Rovesciata**\nIl cuore della ricerca è il superamento della visione lineare del conflitto. Il rapporto tra task conflict e performance segue una **curva a U rovesciata**:\n* **Livelli Bassi:** Mancanza di stimoli e pensiero critico.\n* **Livelli Moderati:** Il punto di equilibrio ottimale dove il dissenso stimola l'innovazione, a patto che esistano stabilità emotiva e ottimi processi di gestione.\n* **Livelli Elevati:** Il punto di rottura in cui l'energia mentale viene sottratta al lavoro per essere sprecata nella gestione delle tensioni.\n\n---\n\n### **Integrazione e Prospettive: Il Fattore Timing (Farh et al., 2010)**\nUn'integrazione cruciale a questa meta-analisi è offerta dal paper di **Farh et al. (2010)**, che introduce la variabile del **ciclo di vita del progetto**. Mentre De Dreu e Weingart mettono in guardia dai rischi del conflitto, Farh dimostra che l'efficacia della curva a U è massima nelle **fasi iniziali**, dove il dissenso è vitale per il *reframing* dei problemi, mentre diventa irrilevante o dannoso nelle fasi finali di implementazione.\n\nIn questo scenario, il **manager** assume un ruolo attivo di facilitatore: deve promuovere intenzionalmente un **clima psicologicamente sicuro** per stimolare controversie costruttive all'inizio, per poi guidare il team verso la convergenza e l'esecuzione rapida man mano che il progetto evolve.",
+            "info": "**Meta-analysis of Conflict in Teams: The Rule of Task vs. Relationship Conflict**\n\n> **AI Summary:** La ricerca di De Dreu e Weingart smentisce il mito del conflitto sempre positivo. Dimostra che sia le tensioni relazionali sia quelle sui contenuti tendono a ridurre la performance. Il beneficio emerge solo sotto specifiche condizioni di moderazione, dove il dissenso non viene percepito come una minaccia personale.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca organizzativa nel framework della mappa.*\n\n**Smentita del Conflitto Benefico**\nContrariamente alle credenze passate, lo studio evidenzia come il **conflitto sul compito** possa essere dannoso quanto quello relazionale, poiché spesso i due si sovrappongono. Quando le critiche alle idee vengono percepite come attacchi personali, la soddisfazione e l'efficacia del team crollano drasticamente.\n\n**Complessità e Clima di Team**\nL'impatto del conflitto dipende dal contesto: nei **compiti complessi**, il dissenso può sovraccaricare le risorse cognitive dei membri, peggiorando il risultato. Fondamentale è il ruolo della **sicurezza psicologica**: solo in un clima di fiducia reciproca la divergenza tecnica non viene interpretata come una minaccia alla stabilità del gruppo.\n\n**Focus: La Relazione a U Rovesciata**\nIl cuore della ricerca è il superamento della visione lineare del conflitto. Il rapporto tra task conflict e performance segue una **curva a U rovesciata**:\n* **Livelli Bassi:** Mancanza di stimoli e pensiero critico.\n* **Livelli Moderati:** Il punto di equilibrio ottimale dove il dissenso stimola l'innovazione, a patto che esistano stabilità emotiva e ottimi processi di gestione.\n* **Livelli Elevati:** Il punto di rottura in cui l'energia mentale viene sottratta al lavoro per essere sprecata nella gestione delle tensioni.\n\n---\n\n## **Integrazione e Prospettive: Il Fattore Timing (Farh et al., 2010)**\nUn'integrazione cruciale a questa meta-analisi è offerta dal paper di **Farh et al. (2010)**, che introduce la variabile del **ciclo di vita del progetto**. Mentre De Dreu e Weingart mettono in guardia dai rischi del conflitto, Farh dimostra che l'efficacia della curva a U è massima nelle **fasi iniziali**, dove il dissenso è vitale per il *reframing* dei problemi, mentre diventa irrilevante o dannoso nelle fasi finali di implementazione.\n\nIn questo scenario, il **manager** assume un ruolo attivo di facilitatore: deve promuovere intenzionalmente un **clima psicologicamente sicuro** per stimolare controversie costruttive all'inizio, per poi guidare il team verso la convergenza e l'esecuzione rapida man mano che il progetto evolve.",
             "starred": true
+        },
+        {
+            "id": "p_custom_1778054662057",
+            "title": "A Co-creative Framework in Design Ideation",
+            "author": "Rutvik Kokate, Prasad Onkar",
+            "year": "28 Gennaio 2026",
+            "area": "Ideation",
+            "url": "https://www.cambridge.org/core/journals/design-science/article/analogical-reasoning-with-large-language-models-a-cocreative-framework-and-benchmarking-of-llms-in-design-ideation/0B8149CCF53C45E1E1B78C4CA93E5BDC",
+            "info": "**Analogical Reasoning with Large Language Models: A Co-creative Framework and Benchmarking of LLMs in Design Ideation**\n\n> **AI Summary:** Studio sperimentale che combina il ragionamento analogico con LLM per supportare l'ideazione di design. La ricerca valida che le **analogie generate da LLM accelerano la creatività dei designer** quando inserite in un framework co-creativo strutturato. Test con 24 studenti di design undergraduate: i gruppi assistiti da LLM hanno generato idee **significativamente meglio valutate** rispetto a quelli senza. Cruciale: il **benchmarking tra diversi LLM ha rivelato differenze significative** nella qualità creativa delle analogie generate, suggerendo che non tutti i modelli sono equivalenti per compiti creativi soggettivi.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**Il Ruolo del Ragionamento Analogico nella Creatività**\nIl ragionamento analogico è un pilastro della creatività umana: quando affrontiamo un problema nuovo, identifichiamo similarità con situazioni familiari e trasposiamo la soluzione. Il paper propone di **delegare questo processo agli LLM**, che fungono da catalizzatori di analogie cross-domain. L'ipotesi: LLM con accesso a vaste base di conoscenza possono generare analogie più originali e distant-field rispetto a quanto umani riuscirebbero a generare autonomamente.\n\n**Design dello Studio e Risultati**\nEsperimento controllato con 24 studenti di design undergraduate suddivisi in due gruppi: con supporto LLM (analogie generate) e senza (brainstorming tradizionale). I gruppi **con supporto LLM hanno generato idee più creative**, misurate su dimensioni di **novità, qualità e utilità**. Il framework co-creativo ha reso strutturato il processo: l'LLM non sostituisce il designer, ma fornisce **stimoli analogici mirati** che espandono lo spazio concettuale di ricerca.\n\n**Benchmarking Critico: Non Tutti gli LLM Sono Uguali**\nScoperta inaspettata ma cruciale: diverse versioni di LLM hanno generato analogie con **qualità creativa significativamente diversa**. Questo suggerisce che le capacità di ragionamento analogico variano sostanzialmente tra modelli. Implicazione: per design support tools, **la scelta del modello LLM non è neutrale** — modelli differenti amplificano diversi aspetti della creatività (novità vs. utilità, ad esempio).\n\n**Il Framework Co-creativo: Analogia come Stimolo Strutturato**\nIl framework non delega l'ideazione all'AI. Invece, usa l'LLM per **generare uno spazio di ricerca espanso di analogie** che il designer umano esplora consapevolmente. Questo è diverso da \"l'AI genera idee finali\" — è piuttosto \"l'AI suggerisce direzioni di ricerca analogica\". Il designer mantiene il controllo e la capacità di **reframing creativo** (perspect ive-taking forzato sulla soluzione suggerita dall'LLM)."
+        },
+        {
+            "id": "p_custom_1778056244398",
+            "title": "Epistemic Landscapes",
+            "author": "Weisberg & Muldoon, Wu",
+            "year": "2024",
+            "area": "Ideation",
+            "url": "",
+            "info": "***Epistemic Landscapes: Weisberg & Muldoon (2009) ↔ Wu (2024)***\n\n**Paper 1:** Weisberg, Michael & Muldoon, Ryan — Epistemic Landscapes and the Division of Cognitive Labor (Philosophy of Science, 2009)\n\n**Paper 2:** Wu, Jingyi — Better than Best: Epistemic Landscapes and Diversity of Practice in Science (Philosophy of Science, 2024)\n\n> **AI Summary 1:** Modello agent-based di ricerca scientifica dove scienziati dividono il lavoro per esplorare paesaggi epistemici sconosciuti. Diversità di strategie di ricerca è **epistemicamente vantaggiosa**: comunità che esplorano diverse parti dello spazio scopre più facilmente multipli picchi locali rispetto a comunità omogenea che scala lo stesso picco.\n\n> **AI Summary 2:** Estensione critica: comunità dove agenti **occasionalmente seguono soluzioni non-ottimali ma diverse** generano performance SUPERIORI a comunità che sempre scelgono il best. Scoperta: **\"meglio di migliore\"** — diversità di pratica deliberata, anche con sacrificio di performance locale, supera ottimalità.\n\n**Differenza Critica**\n\n**Weisberg & Muldoon (2009):** \"Se gli agenti seguono strategie diverse (ma ognuno segue la propria best strategie), il risultato è superiore.\" ✓\n\n**Wu (2024):** \"Anche se gli agenti seguono soluzioni che NON sono best nel loro contesto locale, se queste mantengono diversità, il risultato della comunità è superiore.\" ← **Nuova scoperta**\n\nWu aggiunge il vincolo: gli agenti potrebbero scegliere deliberatamente di **sacrificare performance locale** per sostenere diversità comunitaria. Questo richiede: (1) comunicazione infrequente tra agenti, (2) tolleranza della subottimalità, (3) fiducia che la diversità pagherà nel lungo termine.\n\n**Il Ruolo Cruciale di Social Learning Infrequente**\n\nWu scopre che la frequenza di social learning è **critica**. Se gli agenti comunicano troppo spesso (condividono i loro migliori risultati frequentemente), il sistema converge rapidamente. Se comunicano raramente, hanno tempo di esplorare regioni locali attorno a soluzioni \"peggiori\", scoprendo picchi nascosti. Implicazione: **diverse pratiche devono restare isolate per abbastanza tempo affinché generi innovazione**."
+        },
+        {
+            "id": "p_custom_1778056860881",
+            "title": "Epistemic Inclusion",
+            "author": "Vlasta Sikimić",
+            "year": "25 Settembre 2023",
+            "area": "Ideation",
+            "url": "https://www.tandfonline.com/doi/full/10.1080/02691728.2023.2258831",
+            "info": "**Epistemic Inclusion as the Key to Benefiting from Cognitive Diversity in Science**\n\n> **AI Summary:** Il paper critica la distinzione tra \"apertura agli altri\" (open science) e \"inclusione epistemica vera\" (epistemic inclusion). Scoperta centrale: la **mera diversità demografica non garantisce benefici epistemici** se i gruppi marginalizzati non hanno autorità genuina nel processo deliberativo. Open science permette a minority viewpoints di essere presentate, ma epistemic inclusion richiede che queste visioni **cambino dinamicamente il paradigma di ricerca dominante**. Senza autentica inclusione decisionale, la diversità rimane decorativa.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**L'Epistemic Inclusion**\n\nL'**epistemic inclusion** richiede che le visioni minoritarie abbiano autorità nel **cambiare il paradigma dominante**, non solo di essere discusse nei margini. Sikimić critica il modello di \"integrazione\" dove i marginalizzati si adattano al paradigma dominante con \"piccoli emendamenti\" — questa non è inclusione, è assimilazione. La vera inclusione significa che le visioni minoritarie hanno **genuine authority in deliberation** — potere di veto, di proposta, di reframe del problema stesso.\n\nSenza questo potere strutturale, anche con demographic diversity, la ricerca converge verso il consensus dei gruppi privilegiati. Molti team multidiversi rimangono epistemicamente omogenei perché i gruppi dominanti controllano l'agenda e i criteri di validazione. L'epistemic inclusion ha **doppio valore**: strumentale (produce migliori soluzioni scientifiche) e intrinseco (riduce inequality e injustice). Una comunità che esclude marginalized voices epistemicamente è sia ingiusta che sottoutilizza il suo capitale cognitivo."
+        },
+        {
+            "id": "p_custom_1778057388075",
+            "title": "Impact of Need for Closure and Epistemic Authority",
+            "author": "Annalisa Theodorou, Stefano Livi, Arie W. Kruglanski, Antonio Pierro",
+            "year": "01 Gennaio 2022",
+            "area": "Ideation",
+            "url": "https://iris.uniroma3.it/handle/11590/399701",
+            "info": "**Motivated Team Innovation: Impact of Need for Closure and Epistemic Authority**\n\n> **AI Summary:** Team members con alto \"need for closure\" (NFC — desiderio di certezza) sono sistematicamente più resistenti alle idee innovative di newcomers. Scoperta centrale: NFC causa **freezing** (ancoraggio alle idee dominanti) e inibisce ricezione di innovazioni radicali. L'epistemic authority del newcomer determina ascolto SOLO se il team ha basso NFC.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**Need for Closure e Resistenza all'Innovazione**\n\nIl **need for closure** (NFC) è la motivazione a raggiungere certezza e ridurre ambiguità. Persone con alto NFC **rigettano sistematicamente idee innovative** di newcomers perché la novità crea incertezza. Quando NFC è alto nel team, i membri \"freezano\" sulle idee consolidate e ignorano innovazioni radicali, indipendentemente dalla credibilità del proponente.\n\nCon alto NFC: **freezing** sulle idee del gruppo + resistenza a prospettive nuove. Con basso NFC: l'epistemic authority del newcomer determina se l'idea viene considerata. Questo è **design fixation a livello psicologico** — NFC genera ancoraggio strutturale alle credenze esistenti."
         }
     ],
     "caseStudies": [
@@ -286,12 +334,22 @@
             "title": "Teams Solve Problems Faster When They’re More Cognitively Diverse",
             "author": "Alison Reynolds, David Lewis",
             "year": "2017",
-            "area": "Ideation",
+            "area": "Tracking",
             "url": "https://s88309836e4959a9a.jimcontent.com/download/version/1637926187/module/14027706430/name/HBR%20-%20Teams%20Solve%20Problems%20Faster%20When%20They%E2%80%99re%20More%20Cognitively%20Diverse.pdf",
             "info": "> **AI Summary:** L'articolo dimostra che la **diversità cognitiva** (come elaboriamo le informazioni e affrontiamo il cambiamento) è il vero motore della performance. A differenza della diversità demografica, che non mostra correlazioni dirette con il successo nei test, un'alta varietà di stili di pensiero permette ai team di risolvere problemi complessi molto più velocemente.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca dei framework.*\n\n\n**Oltre la Diversità Visibile**\nLa diversità demografica (genere, etnia, età) da sola non garantisce creatività o velocità. Il successo dipende dalla **diversità cognitiva**, un tratto interno legato a come individui diversi interagiscono con situazioni incerte.\n\n**Il Motore: L'AEM Cube**\nLa performance è stata misurata tramite lo strumento **AEM Cube**, che analizza:\n* **Knowledge Processing**: preferenza tra usare conoscenze note o generarne di nuove.\n* **Perspective**: propensione a usare la propria esperienza o orchestrare quella altrui.\n\n**Barriere Culturali**\nLe aziende tendono a reclutare \"a propria immagine\", creando **bias funzionali** e team omogenei che soffocano il dissenso. Per innovare, i leader devono garantire **sicurezza psicologica**, permettendo a ogni membro di esprimere il proprio stile di pensiero unico.\n\n---\n\n### **Analisi dei Dati: Correlazione tra Diversità e Velocità**\nL'immagine illustra i risultati empirici su sei team (A-F) impegnati in una sfida strategica. Si nota una **correlazione netta**: i team **A, B e C**, con alta diversità cognitiva (deviazioni standard elevate, generalmente sopra 23), hanno completato il compito in circa **21-22 minuti**. Al contrario, i team **D, E e F**, con **bassa diversità cognitiva** (deviazioni standard spesso sotto 20), hanno mostrato performance scadenti: il team D è stato sensibilmente più lento (34.5 minuti), mentre i team E e F hanno **fallito completamente** la sfida.\n\n**Metodologia della Ricerca**\nI risultati si basano su un **esercizio di esecuzione strategica** ripetuto oltre 100 volte in 12 anni. La prova consiste in una simulazione a tempo dove i team devono gestire **situazioni nuove, incerte e complesse**, richiedendo un'elevata capacità di adattamento e apprendimento rapido per raggiungere l'obiettivo prefissato.",
             "images": [
                 "/uploads/img_1777818741804-851773394.png"
             ]
+        },
+        {
+            "id": "c_custom_1778062359008",
+            "title": "Perspective-Taking Training",
+            "author": "Yasuhiro Ooshima, Takashi Mitamura",
+            "year": "2025",
+            "area": "Tracking",
+            "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0323120",
+            "info": "**Effects of Perspective-Taking Training Based on Relational Frame Theory for Cognitive Empathy and Emotional Empathy**\n\n> **AI Summary:** Studio empirico che testa se il perspective-taking può essere **insegnato e migliorato tramite training strutturato** basato sulla Relational Frame Theory (RFT). 43 partecipanti hanno completato un training che usa RFT per esercitare il switching delle prospettive. Risultati: gli score di **cognitive empathy hanno aumentato significativamente** (p=0.031). Scoperta critica: il training è **trainabile** — non è una capacità fissa. Inoltre, il training ha effetti anche su **emotional empathy**, suggerendo che cognitive e emotional empathy sono interconnesse, non separate.\n>\n> *Nota: Questo è un AI Summary generato per contestualizzare la ricerca nel framework della mappa.*\n\n**Perspective-Taking Non è Fisso: è Trainabile**\n\nContrariamente all'assunzione che perspective-taking sia una capacità cognitiva relativamente fissa, il paper dimostra che può essere **sistematicamente migliorato tramite training**. La Relational Frame Theory fornisce il meccanismo: il perspective-taking è **transformazione di funzioni di stimolo** — cioè la capacità di cambiare il significato che attribuisci a una situazione a seconda della prospettiva da cui la guardi. Questo processo è **learnable e improvable**.\n\n**Il Meccanismo RFT: Switching di Prospettive**\n\nRFT concettualizza il perspective-taking come **deictic relational frames** — la capacità di ruotare il sistema di coordinate \"io/tu/qui/ora\" da posizioni diverse. Ad esempio, comprendere \"come io vedo te da dove sto io\" è diverso da \"come tu vedi me da dove stai tu\" — stesso contenuto, ma switch di frame diverso. Il training RFT esercita questo switching fino a renderlo **automatico e fluido**.\n\n**Doppio Effetto: Cognitive e Emotional Empathy**\n\nIl finding critico: il training ha aumentato non solo **cognitive empathy** (comprensione intellettuale del punto di vista altrui) ma anche **emotional empathy** (empatia affettiva). Questo suggerisce che cognitive e emotional empathy **non sono processi separati** — il training su uno influenza l'altro. Implicazione: forzare la comprensione cognitiva di una prospettiva altrui innesca automaticamente risonanza emotiva.\n\n**Implicazione per Team Creativity**\n\nSe perspective-taking è trainabile, allora **non è questione di \"persone che naturalmente ne sono capaci\" vs. \"persone che non lo sono\"**. È questione di **training sistematico**. Questo ha implicazioni dirette per team: non serve \"trovare people con alta empatia naturale\" — serve **progettare cicli di training che esercitino il perspective-taking**. Il training genera automaticamente miglioramento cognitivo + effetto collaterale di empatia emotiva.",
+            "starred": true
         }
     ],
     "links": [
@@ -384,8 +442,8 @@
             "keyword": "k_custom_1777805738314"
         },
         {
-            "caseStudy": "c_custom_1777818741778",
-            "keyword": "k_custom_1777805738314"
+            "paper": "p_custom_1777817620344",
+            "keyword": "k_custom_1777913137576"
         },
         {
             "paper": "p_custom_1777822177101",
@@ -394,6 +452,42 @@
         {
             "paper": "p_custom_1777822177101",
             "keyword": "k_custom_1777821856878"
+        },
+        {
+            "paper": "p_custom_1778054662057",
+            "keyword": "k_custom_1777805738314"
+        },
+        {
+            "paper": "p_custom_1778054662057",
+            "keyword": "k_custom_1777821856878"
+        },
+        {
+            "paper": "p_custom_1778056244398",
+            "keyword": "k_custom_1777821856878"
+        },
+        {
+            "paper": "p_custom_1778056244398",
+            "keyword": "k_custom_1778055601182"
+        },
+        {
+            "paper": "p_custom_1778056860881",
+            "keyword": "k_custom_1778055601182"
+        },
+        {
+            "paper": "p_custom_1778057388075",
+            "keyword": "k_custom_1777821856878"
+        },
+        {
+            "paper": "p_custom_1778057388075",
+            "keyword": "k_custom_1778055601182"
+        },
+        {
+            "caseStudy": "c_custom_1778062359008",
+            "keyword": "k_custom_1777913137576"
+        },
+        {
+            "caseStudy": "c_custom_1777818741778",
+            "keyword": "k_custom_1777805738314"
         }
     ]
 }
